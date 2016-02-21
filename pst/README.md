@@ -6,8 +6,6 @@
 ##### Note
 This version is still under **Beta** version and still an experimental version. Use the script in staging and testing accounts only
 
-###### Authored by: Voltz Jeturian
-
 ##### Description
 This repository is a stand-alone Philippine Standard Time (PST) plugin script for synching on server time
 
