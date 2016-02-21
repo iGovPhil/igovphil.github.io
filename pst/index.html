@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Time PST</title>
+</head>
+<body>
+
+<h3>Embedding PST Timer</h3>
+<pre>
+&lt;div id=&quot;gwt-pst&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+(function(d, eId) {
+  var js, gjs = d.getElementById(eId);
+
+  js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
+  // point temporarily to localhost
+  js.src = &quot;//web.dev/pst/script/gwtpst.js&quot;;
+  gjs.parentNode.insertBefore(js, gjs);
+}(document, 'gwt-pst'));
+&lt;/script&gt;
+</pre>
+
+<div id="gwt-pst"></div>
+<script type="text/javascript">
+(function(d, eId) {
+  var js, gjs = d.getElementById(eId);
+
+  js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
+  // point temporarily to localhost
+  js.src = "//igovphil.github.io/pst/gwtpst.js";
+  gjs.parentNode.insertBefore(js, gjs);
+}(document, 'gwt-pst'));
+</script>
+</body>
+</html>
