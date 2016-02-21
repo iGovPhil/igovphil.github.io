@@ -33,7 +33,7 @@ To add the PST on your template, simply add this syntax after the agency footer 
 - add font option for the text output
 
 ### Known bugs
-- selection id 'gwt-footer-jsdk' may possibly changed on embed, add dynamic id selection
+- selection id 'gwt-pst' may possibly changed on embed, add dynamic id selection
 
 ###### CHANGE LOGS
 **2016-02-16**
