@@ -146,7 +146,7 @@ gwtpst.prototype = {
     var pst = new gwtpst(timerId, {
       // url : 'http://steph.i.gov.ph/time.php',
       // url : 'http://web.dev/pst/unix_time.php',
-      url : 'http://cdn.i.gov.ph/pst/unix_time.php',
+      url : '//cdn.i.gov.ph/pst/unix_time.php',
     });
   }
 
