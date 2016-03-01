@@ -133,9 +133,6 @@ gwtpst.prototype = {
 };
 
 (function(d){
-  // gwt-pst
-  // create element eId + '-timer'
-  // create element eId + '-source'
   function gwtpstInit(){
     var eId = 'gwt-pst';
     var timerId = eId + '-timer', sourceId = eId + '-source', timer, source, e = d.getElementById(eId);
@@ -147,7 +144,9 @@ gwtpst.prototype = {
     e.appendChild(source);
     
     var pst = new gwtpst(timerId, {
-      url : 'http://web.dev/pst/unix_time.php',
+      // url : 'http://steph.i.gov.ph/time.php',
+      // url : 'http://web.dev/pst/unix_time.php',
+      url : 'http://cdn.i.gov.ph/pst/unix_time.php',
     });
   }
 
