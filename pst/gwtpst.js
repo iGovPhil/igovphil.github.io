@@ -133,21 +133,18 @@ gwtpst.prototype = {
 };
 
 (function(d){
-  // gwt-pst
-  // create element eId + '-timer'
-  // create element eId + '-source'
   function gwtpstInit(){
     var eId = 'gwt-pst';
     var timerId = eId + '-timer', sourceId = eId + '-source', timer, source, e = d.getElementById(eId);
 
     timer = d.createElement('div'); timer.id = timerId;
     source = d.createElement('div'); source.id = sourceId;
-    source.innerHTML = 'Source: <a href="https://web.pagasa.dost.gov.ph/index.php/astronomy/philippine-standard-time" target="_blank">PST</a>';
+    // source.innerHTML = 'Source: <a href="https://web.pagasa.dost.gov.ph/index.php/astronomy/philippine-standard-time" target="_blank">PST</a>';
     e.appendChild(timer);
     e.appendChild(source);
     
     var pst = new gwtpst(timerId, {
-      url : 'http://web.dev/pst/unix_time.php',
+      url : '//gwhs.i.gov.ph/pst/unix_time.php',
     });
   }
 

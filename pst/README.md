@@ -34,6 +34,7 @@ To add the PST on your template, simply add this syntax after the agency footer 
 
 ### Known bugs
 - selection id 'gwt-pst' may possibly changed on embed, add dynamic id selection
+- secure link may not possibly load unix_time.php of unsecured server
 
 ###### CHANGE LOGS
 **2016-02-16**
