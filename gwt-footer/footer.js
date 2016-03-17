@@ -13,7 +13,7 @@
  */
 (function(d, fid){
 	var f = d.getElementById(fid);
-	f.innerHTML = '<iframe src="//igovphil.github.io/gwt-footer/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0;" ></iframe>';
+	f.innerHTML = '<iframe src="//gwhs.i.gov.ph/gwt-footer/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0; min-height: 188px" ></iframe>';
 	var i = d.getElementById('footer-gwt-frame');
 
 	i.style.marginBottom = '-3px';

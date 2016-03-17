@@ -13,7 +13,7 @@
 (function(d, eId) {
   var js, gjs = d.getElementById(eId);
   js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
-  js.src = &quot;//gwhs.i.gov.ph/pst/gwtpst.js&quot;;
+  js.src = &quot;//gwhs.i.gov.ph/pst/gwtpst.js?&quot;+new Date().getTime();
   gjs.parentNode.insertBefore(js, gjs);
 }(document, 'gwt-pst'));
 &lt;/script&gt;
@@ -24,7 +24,7 @@
 (function(d, eId) {
   var js, gjs = d.getElementById(eId);
   js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
-  js.src = "//gwhs.i.gov.ph/pst/gwtpst.js";
+  js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
   gjs.parentNode.insertBefore(js, gjs);
 }(document, 'gwt-pst'));
 </script>

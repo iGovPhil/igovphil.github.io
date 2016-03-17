@@ -34,7 +34,7 @@ var gwtpst = gwtpst || function(elementId, options){
     return false;
   }
 
-  this.init(elementId);
+  this.jsonp_request(elementId);
 };
 
 gwtpst.prototype = {
@@ -79,32 +79,20 @@ gwtpst.prototype = {
     return month + ' ' + day + ', ' + year + ' ' + hours + ':' + minutes + ':' + seconds + ' ' + meridian;
   },
   // initialize and retrieve from the pst unix timestamp server
-  init : function(elementId){
-    var xmlHttp = null;
-    xmlHttp = new XMLHttpRequest();
+  jsonp_request: function(){
+    var js = document.createElement('script'); js.id = 'gwt-pst-jsonp-time';
+    js.src = this.url+'?'+this.time(); // must be no cache
+    this.element.parentNode.insertBefore(js, this.element);
+  },
+  jsonp_response: function(data){
     var scope = this;
-    xmlHttp.onreadystatechange = function(){
-      if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
-        if (xmlHttp.responseText == "Not found"){
-          throw new Error('No data found on ' + scope.url + '!');
-        }
-        else{
-          // console.log(xmlHttp.responseText);
-          // var info = eval ( "(" + xmlHttp.responseText + ")" );
-          // No parsing necessary with JSON!        
-          // info.jsonData[ 0 ].cmname;
-          scope._serverTime = parseInt(xmlHttp.responseText)*1000;
-          scope.getDiff();
 
-          // run the timer
-          scope.timer(scope);
-        }
-      }
-    };
-    xmlHttp.open("GET", this.url, true);
-    xmlHttp.send(null);
+    // console.log(time);
+    scope._serverTime = parseInt(data.time)*1000;
+    scope.getDiff();
 
-    return this;
+    // run the timer
+    scope.timer(scope);
   },
   timer : function(gwhspst){
     var scope = gwhspst;
@@ -132,21 +120,22 @@ gwtpst.prototype = {
   }
 };
 
-(function(d){
-  function gwtpstInit(){
-    var eId = 'gwt-pst';
-    var timerId = eId + '-timer', sourceId = eId + '-source', timer, source, e = d.getElementById(eId);
+var gwtpst_widget;
+function gwtpstInit(){
+  var eId = 'gwt-pst';
+  var timerId = eId + '-timer', sourceId = eId + '-source', timer, source, e = document.getElementById(eId);
 
-    timer = d.createElement('div'); timer.id = timerId;
-    source = d.createElement('div'); source.id = sourceId;
-    // source.innerHTML = 'Source: <a href="https://web.pagasa.dost.gov.ph/index.php/astronomy/philippine-standard-time" target="_blank">PST</a>';
-    e.appendChild(timer);
-    e.appendChild(source);
-    
-    var pst = new gwtpst(timerId, {
-      url : '//gwhs.i.gov.ph/pst/unix_time.php',
-    });
-  }
+  timer = document.createElement('div'); timer.id = timerId;
+  source = document.createElement('div'); source.id = sourceId;
+  // source.innerHTML = 'Source: <a href="https://web.pagasa.dost.gov.ph/index.php/astronomy/philippine-standard-time" target="_blank">PST</a>';
+  e.appendChild(timer);
+  e.appendChild(source);
+  
+  gwtpst_widget = new gwtpst(timerId, {
+    element: e,
+    url : '//gwhs.i.gov.ph/pst/jsonp_unix.php',
+    // url: '//web.dev/pst/jsonp_unix.php',
+  });
+}
 
-  gwtpstInit();
-}(document));
+gwtpstInit();
