@@ -6,5 +6,7 @@ header('Content-Type: application/javascript');
 (function(gwtpst){
 	if(typeof gwtpst === "undefined" )
 		return false;
-	gwtpst.jsonp_response({time : <?php echo time(); ?>});
-})(gwtpst_widget);
+	gwtpst._jsonpResponseProcess(function(){
+		return {time: <?php echo time(); ?>}
+	});
+})(gwtPstWidget);

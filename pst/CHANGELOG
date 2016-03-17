@@ -1,10 +1,15 @@
 ###### CHANGE LOGS
-**2016-02-16**
+#####2016-02-16
 - created dynamic PST class
 
-**2016-02-21**
+#####2016-02-21
 - added auto embed script
 
-**2016-03-11**
+#####2016-03-11
 - updated PST script to run JSONP
 - added no cache to avoid static time content
+
+#####2016-03-14
+- added different date formatting option
+- added prefix and suffix
+- enable multiple date containers

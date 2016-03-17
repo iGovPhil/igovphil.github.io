@@ -8,7 +8,7 @@
 
 <h3>Embedding PST Timer</h3>
 <pre>
-&lt;div id=&quot;gwt-pst&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;pst-time&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
 (function(d, eId) {
   var js, gjs = d.getElementById(eId);
@@ -16,17 +16,25 @@
   js.src = &quot;//gwhs.i.gov.ph/pst/gwtpst.js?&quot;+new Date().getTime();
   gjs.parentNode.insertBefore(js, gjs);
 }(document, 'gwt-pst'));
+
+var gwtpstReady = function(){
+  firstPst = new gwtpstTime('pst-time');
+}
 &lt;/script&gt;
 </pre>
 
-<div id="gwt-pst"></div>
-<script type="text/javascript">
+<div id="pst-time"></div>
+<script type="text/javascript" id="gwt-pst">
 (function(d, eId) {
   var js, gjs = d.getElementById(eId);
   js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
   js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
-  gjs.parentNode.insertBefore(js, gjs);
+  gjs.parentNode.insertBefore(js, gjs.nextSibling);
 }(document, 'gwt-pst'));
+
+var gwtpstReady = function(){
+  firstPst = new gwtpstTime('pst-time');
+}
 </script>
 </body>
 </html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Time PST</title>
+</head>
+<body>
+
+<h3>Other Date Format</h3>
+<ul>
+  <li>date format:</li>
+  <li>d - day of the month</li>
+  <li>dd - day of the month with leading zeroes</li>
+  <li>ddd - 3 letters abbreviation day of the week</li>
+  <li>dddd - full word of the day of the week</li>
+  <li>m - day of the month</li>
+  <li>mm - day of the month with leading zeroes</li>
+  <li>mmm - half month word</li>
+  <li>mmmm - full word month</li>
+  <li>h - hours in regular time</li>
+  <li>hh - hours in regular time with leading zeroes</li>
+  <li>H - hours in military time</li>
+  <li>HH - hours in military time with leading zeroes</li>
+  <li>s - number of seconds</li>
+  <li>ss - number of seconds with leading zeroes</li>
+  <li>l - number of mili seconds in 3 digits</li>
+  <li>L - number of mili seconds in 2 digits</li>
+  <li>t - Ante or Post meridian (am/pm) in single letter</li>
+  <li>tt - Ante or Post meridian (am/pm)</li>
+  <li>T - Capitalized Ante or Post meridian (AM/PM) in single letter</li>
+  <li>TT - Capitalized Ante or Post meridian (AM/PM)</li>
+  <li>Z - Abbrebeviated timezone</li>
+  <li>o - GMT/UTC timezone offset</li>
+  <li>S - Ordinal number suffix</li>
+</ul>
+<ul>
+  <li>Common format strings:</li>
+  <li>"default":      "dddd, mmmm dd, yyyy, h:mm:ss TT",</li>
+  <li>shortDate:      "m/d/yy",</li>
+  <li>mediumDate:     "mmm d, yyyy",</li>
+  <li>longDate:       "mmmm d, yyyy",</li>
+  <li>fullDate:       "dddd, mmmm d, yyyy",</li>
+  <li>shortTime:      "h:MM TT",</li>
+  <li>mediumTime:     "h:MM:ss TT",</li>
+  <li>longTime:       "h:MM:ss TT Z",</li>
+  <li>isoDate:        "yyyy-mm-dd",</li>
+  <li>isoTime:        "HH:MM:ss",</li>
+  <li>isoDateTime:    "yyyy-mm-dd'T'HH:MM:ss",</li>
+  <li>isoUtcDateTime: "UTC:yyyy-mm-dd'T'HH:MM:ss'Z'"</li>
+</ul>
+<pre>
+&lt;div id=&quot;pst-time&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+(function(d, eId) {
+  var js, gjs = d.getElementById(eId);
+  js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
+  js.src = &quot;//gwhs.i.gov.ph/pst/gwtpst.js?&quot;+new Date().getTime();
+  gjs.parentNode.insertBefore(js, gjs);
+}(document, 'gwt-pst'));
+
+var gwtpstReady = function(){
+  var otherFormat = 'dddd, mmmm dd, yyyy, h:mm:ss TT';
+  var firstPst = new gwtpstTime('pst-time', {format: otherFormat});
+}
+&lt;/script&gt;
+</pre>
+
+<div><span id="time1"></span> -- Default: mmmm dd, yyyy, h:mm:ss TT</div>
+<div><span id="time2"></span> -- m/d/yy</div>
+<div><span id="time3"></span> -- h:MM:ss TT Z</div>
+<div><span id="time4"></span> -- yyyy-mm-dd</div>
+<div><span id="time5"></span> -- UTC:yyyy-mm-dd'T'HH:MM:ss"Z"</div>
+<script type="text/javascript" id="gwt-pst">
+(function(d, eId) {
+  var js, gjs = d.getElementById(eId);
+  js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
+  js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
+  gjs.parentNode.insertBefore(js, gjs.nextSibling);
+}(document, 'gwt-pst'));
+
+var gwtpstReady = function(){
+  new gwtpstTime('time1', {
+    format: 'dddd, mmmm dd, yyyy, h:MM:ss TT',
+  });
+  new gwtpstTime('time2', {
+    format: 'm/d/yy',
+  });
+  new gwtpstTime('time3', {
+    format: 'longTime',
+  });
+  new gwtpstTime('time4', {
+    format: 'isoDate',
+  });
+  new gwtpstTime('time5', {
+    format: 'UTC:yyyy-mm-dd"T"HH:MM:ss"Z"',
+  });
+}
+</script>
+</body>
+</html>
