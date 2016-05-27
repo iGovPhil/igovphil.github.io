@@ -65,18 +65,21 @@ var gwtpstReady = function(){
 &lt;/script&gt;
 </pre>
 
+<h1>Samples:</h1>
 <div><span id="time1"></span> -- Default: mmmm dd, yyyy, h:mm:ss TT</div>
 <div><span id="time2"></span> -- m/d/yy</div>
 <div><span id="time3"></span> -- h:MM:ss TT Z</div>
 <div><span id="time4"></span> -- yyyy-mm-dd</div>
 <div><span id="time5"></span> -- UTC:yyyy-mm-dd'T'HH:MM:ss"Z"</div>
-<script type="text/javascript" id="gwt-pst">
+<div><span id="time6"></span> -- mediumTime</div>
+<div id="pst-time"></div>
+<script type="text/javascript">
 (function(d, eId) {
   var js, gjs = d.getElementById(eId);
   js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
   js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
   gjs.parentNode.insertBefore(js, gjs.nextSibling);
-}(document, 'gwt-pst'));
+}(document, 'pst-time'));
 
 var gwtpstReady = function(){
   new gwtpstTime('time1', {
@@ -93,6 +96,9 @@ var gwtpstReady = function(){
   });
   new gwtpstTime('time5', {
     format: 'UTC:yyyy-mm-dd"T"HH:MM:ss"Z"',
+  });
+  new gwtpstTime('time6', {
+    format: 'mediumTime',
   });
 }
 </script>

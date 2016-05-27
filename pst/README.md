@@ -95,3 +95,9 @@ var gwtpstReady = function(){
 - added prefix and suffix
 - enable multiple date containers
 
+##### 2016-05-27
+- fix missing gwt-pst id, changed to pst-time id
+- fix no cache suffix for unix time
+- updated other_date.html
+- linked index.html to other_date.html
+- updated sample output on index.html

@@ -3,12 +3,41 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Time PST</title>
+    <style>
+    <!--
+    #pst-container{
+      font-size: 15px;
+      line-height: 1em;
+    }
+    #pst-container div{
+      margin-bottom: 10px;
+    }
+    #pst-time{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    #pst-date{
+      font-size: 26px;
+    }
+    #pst-source{
+      font-size: 13px;
+      color: #909090;
+      text-decoration: none;
+    }
+    -->
+    </style>
 </head>
 <body>
 
 <h3>Embedding PST Timer</h3>
 <pre>
-&lt;div id=&quot;pst-time&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;pst-container&quot;&gt;
+  &lt;div&gt;Philippine Standard Time:&lt;/div&gt;
+  &lt;div id=&quot;pst-time&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;pst-date&quot;&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a href=&quot;https://gwhs.i.gov.ph/pst/&quot; id=&quot;pst-source&quot; target=&quot;_blank&quot;&gt;PST Source&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
 &lt;script type=&quot;text/javascript&quot;&gt;
 (function(d, eId) {
   var js, gjs = d.getElementById(eId);
@@ -18,23 +47,42 @@
 }(document, 'gwt-pst'));
 
 var gwtpstReady = function(){
-  firstPst = new gwtpstTime('pst-time');
+  new gwtpstTime('pst-time', {
+    format: 'mediumTime',
+  });
+  new gwtpstTime('pst-date', {
+    format: 'mmmm dd, yyyy',
+  });
 }
 &lt;/script&gt;
 </pre>
 
+<h1>Sample Output</h1>
+<div id="pst-container">
+<div>Philippine Standard Time:</div>
 <div id="pst-time"></div>
-<script type="text/javascript" id="gwt-pst">
+<div id="pst-date"></div>
+<div><a href="https://gwhs.i.gov.ph/pst/" id="pst-source" target="_blank">PST Source</a></div>
+</div>
+<script type="text/javascript">
 (function(d, eId) {
   var js, gjs = d.getElementById(eId);
   js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
   js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
-  gjs.parentNode.insertBefore(js, gjs.nextSibling);
-}(document, 'gwt-pst'));
+  gjs.parentNode.insertBefore(js, gjs);
+}(document, 'pst-time'));
 
 var gwtpstReady = function(){
-  firstPst = new gwtpstTime('pst-time');
+  new gwtpstTime('pst-time', {
+    format: 'mediumTime',
+  });
+  new gwtpstTime('pst-date', {
+    format: 'mmmm dd, yyyy',
+  });
 }
 </script>
+
+<h1>See other formats</h1>
+<p>There are also <a href="other_date.html">other date formats</a> available.</p>
 </body>
 </html>

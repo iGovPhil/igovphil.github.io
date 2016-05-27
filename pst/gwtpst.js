@@ -1,6 +1,6 @@
 /**
- * A Stand-alone Philippine Standard Time (PST) plugin script for synching on server time
- * this plugin prints a time widget that is in-sync on the Philippine Time Server base on PST
+ * A Stand-alone Philippine Standard Time (PST) plugin script for synching the display time to a more standard PST time
+ * this plugin prints a time widget that is in-sync on the Philippine Time Server
  * Author: Voltz Jeturian (jeturian@gmail.com, voltz.jeturian@icto.dost.gov.ph)
  * Project made possible by: AO39 Component of iGovPhil Project ICTO-DOST Philippines
  */
@@ -13,7 +13,7 @@ var gwtpst = gwtpst || function(elementId, options){
   // initialize time difference
   this.time();
   defaultOptions = {
-    url : '', // URL of the PST unix timestamp server
+    url : '//gwhs.i.gov.ph/pst/jsonp_unix.php', // URL of the PST unix timestamp server
     refreshRate : 200, // refresh rate of pst timer
   };
 
@@ -39,7 +39,6 @@ var gwtpst = gwtpst || function(elementId, options){
 
 gwtpst.prototype = {
   url : '',
-  // element : document.createElement("DIV"),
   _started: false,
   _serverTime: 0,
   timers: new Array(),
@@ -62,7 +61,7 @@ gwtpst.prototype = {
   jsonpRequest: function(){
     var js = document.createElement('script'); js.id = 'gwt-pst-jsonp-time';
     js.src = this.url+'?'+this.time(); // must be no cache
-    this.element.parentNode.insertBefore(js, this.element.nextSibling);
+    this._element.parentNode.insertBefore(js, this._element.nextSibling);
   },
   _jsonpResponseProcess: function(func){
     if(response = func()){
@@ -297,9 +296,9 @@ Date.prototype.format = function (mask, utc) {
 
 var gwtPstWidget;
 var gwtpstInit = function(){
-  gwtPstWidget = new gwtpst('gwt-pst', {
+  gwtPstWidget = new gwtpst('pst-time', {
     element: document.getElementById('gwt-pst'),
-    url: '//web.dev/pst/jsonp_unix.php',
+    url: '//gwhs.i.gov.ph/pst/jsonp_unix.php?'+new Date().getTime(),
   });
 };
 gwtpstInit();
