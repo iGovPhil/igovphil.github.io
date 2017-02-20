@@ -1,0 +1,2312 @@
+[
+   {
+      "uacs": "01",
+      "department": "Congress of the Philippines",
+      "agency": "Congress of the Philippines"
+   },
+   {
+      "uacs": "02",
+      "department": "Office of the President (OP)",
+      "agency": "Office of the President (OP)"
+   },
+   {
+      "uacs": "03",
+      "department": "Office of the Vice-President (OVP)",
+      "agency": "Office of the Vice-President (OVP)"
+   },
+   {
+      "uacs": "04",
+      "department": "Department of Agrarian Reform (DAR)",
+      "agency": "Department of Agrarian Reform (DAR)"
+   },
+   {
+      "uacs": "05",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Department of Agriculture (DA)"
+   },
+   {
+      "uacs": "06",
+      "department": "Department of Budget and Management (DBM)",
+      "agency": "Department of Budget and Management (DBM)"
+   },
+   {
+      "uacs": "07",
+      "department": "Department of Education (DepEd)",
+      "agency": "Department of Education (DepEd)"
+   },
+   {
+      "uacs": "08",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "State Universities and Colleges (SUCs)"
+   },
+   {
+      "uacs": "09",
+      "department": "Department of Energy (DOE)",
+      "agency": "Department of Energy (DOE)"
+   },
+   {
+      "uacs": "10",
+      "department": "Department of Environment and Natural Resources (DENR)",
+      "agency": "Department of Environment and Natural Resources (DENR)"
+   },
+   {
+      "uacs": "11",
+      "department": "Department of Finance (DOF)",
+      "agency": "Department of Finance (DOF)"
+   },
+   {
+      "uacs": "12",
+      "department": "Department of Foreign Affairs (DFA)",
+      "agency": "Department of Foreign Affairs (DFA)"
+   },
+   {
+      "uacs": "13",
+      "department": "Department of Health (DOH)",
+      "agency": "Department of Health (DOH)"
+   },
+   {
+      "uacs": "14",
+      "department": "Department of the Interior and Local Government (DILG)",
+      "agency": "Department of the Interior and Local Government (DILG)"
+   },
+   {
+      "uacs": "15",
+      "department": "Department of Justice (DOJ)",
+      "agency": "Department of Justice (DOJ)"
+   },
+   {
+      "uacs": "16",
+      "department": "Department of Labor and Employment (DOLE)",
+      "agency": "Department of Labor and Employment (DOLE)"
+   },
+   {
+      "uacs": "17",
+      "department": "Department of National Defense (DND)",
+      "agency": "Department of National Defense (DND)"
+   },
+   {
+      "uacs": "18",
+      "department": "Department of Public Works and Highways (DPWH)",
+      "agency": "Department of Public Works and Highways (DPWH)"
+   },
+   {
+      "uacs": "19",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Department of Science and Technology (DOST)"
+   },
+   {
+      "uacs": "20",
+      "department": "Department of Social Welfare and Development (DSWD)",
+      "agency": "Department of Social Welfare and Development (DSWD)"
+   },
+   {
+      "uacs": "21",
+      "department": "Department of Tourism (DOT)",
+      "agency": "Department of Tourism (DOT)"
+   },
+   {
+      "uacs": "22",
+      "department": "Department of Trade and Industry (DTI)",
+      "agency": "Department of Trade and Industry (DTI)"
+   },
+   {
+      "uacs": "23",
+      "department": "Department of Transportation and Communications (DOTC)",
+      "agency": "Department of Transportation and Communications (DOTC)"
+   },
+   {
+      "uacs": "24",
+      "department": "National Economic and Development Authority (NEDA)",
+      "agency": "National Economic and Development Authority (NEDA)"
+   },
+   {
+      "uacs": "25",
+      "department": "Presidential Communications Operations Office (PCOO)",
+      "agency": "Presidential Communications Operations Office (PCOO)"
+   },
+   {
+      "uacs": "26",
+      "department": "Other Executive Offices",
+      "agency": "Other Executive Offices"
+   },
+   {
+      "uacs": "27",
+      "department": "Autonomous Region in Muslim Mindanao (ARMM)",
+      "agency": "Autonomous Region in Muslim Mindanao (ARMM)"
+   },
+   {
+      "uacs": "28",
+      "department": "Joint Legislative-Executive Councils",
+      "agency": "Joint Legislative-Executive Councils"
+   },
+   {
+      "uacs": "29",
+      "department": "The Judiciary",
+      "agency": "The Judiciary"
+   },
+   {
+      "uacs": "30",
+      "department": "Civil Service Commission (CSC)",
+      "agency": "Civil Service Commission (CSC)"
+   },
+   {
+      "uacs": "31",
+      "department": "Commission on Audit (COA)",
+      "agency": "Commission on Audit (COA)"
+   },
+   {
+      "uacs": "32",
+      "department": "Commission on Elections (COMELEC)",
+      "agency": "Commission on Elections (COMELEC)"
+   },
+   {
+      "uacs": "33",
+      "department": "Office of the Ombudsman",
+      "agency": "Office of the Ombudsman"
+   },
+   {
+      "uacs": "34",
+      "department": "Commission on Human Rights (CHR)",
+      "agency": "Commission on Human Rights (CHR)"
+   },
+   {
+      "uacs": "35",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Budgetary Support to Government Corporations"
+   },
+   {
+      "uacs": "36",
+      "department": "Allocations to Local Government Units",
+      "agency": "Allocations to Local Government Units"
+   },
+   {
+      "uacs": "37",
+      "department": "Department of Information and Communications Technology",
+      "agency": "Department of Information and Communications Technology"
+   },
+   {
+      "uacs": "38",
+      "department": "Department of Transportation",
+      "agency": "Department of Transportation"
+   },
+   {
+      "uacs": "01001",
+      "department": "Congress of the Philippines",
+      "agency": "Senate"
+   },
+   {
+      "uacs": "01002",
+      "department": "Congress of the Philippines",
+      "agency": "Senate Electoral Tribunal"
+   },
+   {
+      "uacs": "01003",
+      "department": "Congress of the Philippines",
+      "agency": "Commission on Appointments"
+   },
+   {
+      "uacs": "01004",
+      "department": "Congress of the Philippines",
+      "agency": "House of Representatives"
+   },
+   {
+      "uacs": "01005",
+      "department": "Congress of the Philippines",
+      "agency": "House of Representatives Electoral Tribunal"
+   },
+   {
+      "uacs": "02001",
+      "department": "Office of the President (OP)",
+      "agency": "The President's Offices"
+   },
+   {
+      "uacs": "03000",
+      "department": "Office of the Vice-President (OVP)",
+      "agency": "Office of the Vice-President (OVP)"
+   },
+   {
+      "uacs": "04001",
+      "department": "Department of Agrarian Reform (DAR)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "05001",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "05002",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Agricultural Credit Policy Council"
+   },
+   {
+      "uacs": "05003",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Bureau of Fisheries and Aquatic Resources"
+   },
+   {
+      "uacs": "05004",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Cotton Development Administration"
+   },
+   {
+      "uacs": "05005",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Fertilizer and Pesticide Authority"
+   },
+   {
+      "uacs": "05006",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Fiber Industry Development Authority"
+   },
+   {
+      "uacs": "05007",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Livestock Development Council"
+   },
+   {
+      "uacs": "05008",
+      "department": "Department of Agriculture (DA)",
+      "agency": "National Agricultural and Fishery Council"
+   },
+   {
+      "uacs": "05009",
+      "department": "Department of Agriculture (DA)",
+      "agency": "National Meat Inspection Service"
+   },
+   {
+      "uacs": "05010",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Philippine Carabao Center"
+   },
+   {
+      "uacs": "05011",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Philippine Center for Post-Harvest Development and Mechanization"
+   },
+   {
+      "uacs": "05012",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Philippine Fiber Industry Development Authority"
+   },
+   {
+      "uacs": "05013",
+      "department": "Department of Agriculture (DA)",
+      "agency": "Philippine Council for Agriculture and Fisheries"
+   },
+   {
+      "uacs": "06001",
+      "department": "Department of Budget and Management (DBM)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "06002",
+      "department": "Department of Budget and Management (DBM)",
+      "agency": "Government Procurement Policy Board-Technical Support Office"
+   },
+   {
+      "uacs": "06003",
+      "department": "Department of Budget and Management (DBM)",
+      "agency": "Procurement Service"
+   },
+   {
+      "uacs": "07001",
+      "department": "Department of Education (DepEd)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "07002",
+      "department": "Department of Education (DepEd)",
+      "agency": "National Book Development Board"
+   },
+   {
+      "uacs": "07003",
+      "department": "Department of Education (DepEd)",
+      "agency": "National Council for Children's Television"
+   },
+   {
+      "uacs": "07004",
+      "department": "Department of Education (DepEd)",
+      "agency": "National Museum"
+   },
+   {
+      "uacs": "07005",
+      "department": "Department of Education (DepEd)",
+      "agency": "Philippine High School for the Arts"
+   },
+   {
+      "uacs": "07006",
+      "department": "Department of Education (DepEd)",
+      "agency": "Early Childhood Care and Development Council"
+   },
+   {
+      "uacs": "08001",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Eulogio 'Amang' Rodriguez Institute of Science and Technology"
+   },
+   {
+      "uacs": "08002",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Marikina Polytechnic College"
+   },
+   {
+      "uacs": "08003",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Philippine Normal University"
+   },
+   {
+      "uacs": "08004",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Philippine State College of Aeronautics"
+   },
+   {
+      "uacs": "08005",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Polytechnic University of the Philippines"
+   },
+   {
+      "uacs": "08006",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Rizal Technological University"
+   },
+   {
+      "uacs": "08007",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Technological University of the Philippines"
+   },
+   {
+      "uacs": "08008",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "University of the Philippines System"
+   },
+   {
+      "uacs": "08009",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Don Mariano Marcos Memorial State University"
+   },
+   {
+      "uacs": "08010",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Ilocos Sur Polytechnic State College"
+   },
+   {
+      "uacs": "08011",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Mariano Marcos State University"
+   },
+   {
+      "uacs": "08012",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "North Luzon Philippines State College"
+   },
+   {
+      "uacs": "08013",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Pangasinan State University"
+   },
+   {
+      "uacs": "08014",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "University of Northern Philippines"
+   },
+   {
+      "uacs": "08015",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Abra State Institute of Science and Technology"
+   },
+   {
+      "uacs": "08016",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Apayao State College"
+   },
+   {
+      "uacs": "08017",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Benguet State University"
+   },
+   {
+      "uacs": "08018",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Ifugao State University"
+   },
+   {
+      "uacs": "08019",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Kalinga State University"
+   },
+   {
+      "uacs": "08020",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Mountain Province State University"
+   },
+   {
+      "uacs": "08021",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Batanes State College"
+   },
+   {
+      "uacs": "08022",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Cagayan State University"
+   },
+   {
+      "uacs": "08023",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Isabela State University"
+   },
+   {
+      "uacs": "08024",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Nueva Vizcaya State University"
+   },
+   {
+      "uacs": "08025",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Quirino State University"
+   },
+   {
+      "uacs": "08026",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Aurora State College of Technology"
+   },
+   {
+      "uacs": "08027",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Bataan Peninsula State University"
+   },
+   {
+      "uacs": "08028",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Bulacan Agricultural State College"
+   },
+   {
+      "uacs": "08029",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Bulacan State University"
+   },
+   {
+      "uacs": "08030",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Central Luzon State University"
+   },
+   {
+      "uacs": "08031",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Don Honorio Ventura Technological State University"
+   },
+   {
+      "uacs": "08032",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Nueva Ecija University of Science and Technology"
+   },
+   {
+      "uacs": "08033",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Pampanga State Agricultural University"
+   },
+   {
+      "uacs": "08034",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Philippine Merchant Marine Academy"
+   },
+   {
+      "uacs": "08035",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Ramon Magsaysay Technological University"
+   },
+   {
+      "uacs": "08036",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Tarlac College of Agriculture"
+   },
+   {
+      "uacs": "08037",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Tarlac State University"
+   },
+   {
+      "uacs": "08038",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Batangas State University"
+   },
+   {
+      "uacs": "08039",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Cavite State University"
+   },
+   {
+      "uacs": "08040",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Laguna State Polytechnic University"
+   },
+   {
+      "uacs": "08041",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Southern Luzon State University"
+   },
+   {
+      "uacs": "08042",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "University of Rizal System"
+   },
+   {
+      "uacs": "08043",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Marinduque State College"
+   },
+   {
+      "uacs": "08044",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Mindoro State College of Agriculture and Technology"
+   },
+   {
+      "uacs": "08045",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Occidental Mindoro State College"
+   },
+   {
+      "uacs": "08046",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Palawan State University"
+   },
+   {
+      "uacs": "08047",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Romblon State University"
+   },
+   {
+      "uacs": "08048",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Western Philippines University"
+   },
+   {
+      "uacs": "08049",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Bicol University"
+   },
+   {
+      "uacs": "08050",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Bicol State College of Applied Sciences and Technology"
+   },
+   {
+      "uacs": "08051",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Camarines Norte State College"
+   },
+   {
+      "uacs": "08052",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Camarines Sur Polytechnic Colleges"
+   },
+   {
+      "uacs": "08053",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Catanduanes State University"
+   },
+   {
+      "uacs": "08054",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Central Bicol State University of Agriculture"
+   },
+   {
+      "uacs": "08055",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Dr. Emilio B. Espinosa, Sr. Memorial State College of Agriculture and Technology"
+   },
+   {
+      "uacs": "08056",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Partido State University"
+   },
+   {
+      "uacs": "08057",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Sorsogon State College"
+   },
+   {
+      "uacs": "08058",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Aklan State University"
+   },
+   {
+      "uacs": "08059",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Capiz State University"
+   },
+   {
+      "uacs": "08060",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Carlos C. Hilado Memorial State College"
+   },
+   {
+      "uacs": "08061",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Guimaras State College"
+   },
+   {
+      "uacs": "08062",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Iloilo State College of Fisheries"
+   },
+   {
+      "uacs": "08063",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Central Philippines State University"
+   },
+   {
+      "uacs": "08064",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Northern Iloilo Polytechnic State College"
+   },
+   {
+      "uacs": "08065",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Northern Negros State College of Science and Technology"
+   },
+   {
+      "uacs": "08066",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "University of Antique"
+   },
+   {
+      "uacs": "08067",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Iloilo Science and Technology University"
+   },
+   {
+      "uacs": "08068",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "West Visayas State University"
+   },
+   {
+      "uacs": "08069",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Bohol Island State University"
+   },
+   {
+      "uacs": "08070",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Cebu Normal University"
+   },
+   {
+      "uacs": "08071",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Cebu Technological University"
+   },
+   {
+      "uacs": "08072",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Negros Oriental State University"
+   },
+   {
+      "uacs": "08073",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Siquijor State College"
+   },
+   {
+      "uacs": "08074",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Eastern Samar State University"
+   },
+   {
+      "uacs": "08075",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Eastern Visayas State University"
+   },
+   {
+      "uacs": "08076",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Leyte Normal University"
+   },
+   {
+      "uacs": "08077",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Naval State University"
+   },
+   {
+      "uacs": "08078",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Northwest Samar State University"
+   },
+   {
+      "uacs": "08079",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Palompon Polytechnic State University"
+   },
+   {
+      "uacs": "08080",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Samar State University"
+   },
+   {
+      "uacs": "08081",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Southern Leyte State University"
+   },
+   {
+      "uacs": "08082",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "University of Eastern Philippines"
+   },
+   {
+      "uacs": "08083",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Visayas State University"
+   },
+   {
+      "uacs": "08084",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "J. H. Cerilles State College"
+   },
+   {
+      "uacs": "08085",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Jose Rizal Memorial State University"
+   },
+   {
+      "uacs": "08086",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Western Mindanao State University"
+   },
+   {
+      "uacs": "08087",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Zamboanga City State Polytechnic College"
+   },
+   {
+      "uacs": "08088",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Zamboanga State College of Marine Sciences and Technology"
+   },
+   {
+      "uacs": "08089",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Bukidnon State University"
+   },
+   {
+      "uacs": "08090",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Camiguin Polytechnic State College"
+   },
+   {
+      "uacs": "08091",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Central Mindanao University"
+   },
+   {
+      "uacs": "08092",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Mindanao University of Science and Technology"
+   },
+   {
+      "uacs": "08093",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "MSU-Iligan Institute of Technology"
+   },
+   {
+      "uacs": "08094",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Misamis Oriental State College of Agriculture and Technology"
+   },
+   {
+      "uacs": "08095",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Northwestern Mindanao State College of Science and Technology"
+   },
+   {
+      "uacs": "08096",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Davao del Norte State College"
+   },
+   {
+      "uacs": "08097",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Davao Oriental State College of Science and Technology"
+   },
+   {
+      "uacs": "08098",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Southern Philippines Agri-Business and Marine and Aquatic School of Technology"
+   },
+   {
+      "uacs": "08099",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "University of Southeastern Philippines"
+   },
+   {
+      "uacs": "08100",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Cotabato State University"
+   },
+   {
+      "uacs": "08101",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Cotabato Foundation College of Science and Technology"
+   },
+   {
+      "uacs": "08102",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Sultan Kudarat State University"
+   },
+   {
+      "uacs": "08103",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "University of Southern Mindanao"
+   },
+   {
+      "uacs": "08104",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Agusan del Sur State College of Agriculture and Technology"
+   },
+   {
+      "uacs": "08105",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Caraga State University"
+   },
+   {
+      "uacs": "08106",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Surigao del Sur State University"
+   },
+   {
+      "uacs": "08107",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Surigao State College of Technology"
+   },
+   {
+      "uacs": "08108",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Adiong Memorial Polytechnic State College"
+   },
+   {
+      "uacs": "08109",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Basilan State College"
+   },
+   {
+      "uacs": "08110",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Mindanao State University"
+   },
+   {
+      "uacs": "08111",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "MSU-Tawi-Tawi College of Technology and Oceanography"
+   },
+   {
+      "uacs": "08112",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Sulu State College"
+   },
+   {
+      "uacs": "08113",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Tawi-Tawi Regional Agricultural College"
+   },
+   {
+      "uacs": "08114",
+      "department": "State Universities and Colleges (SUCs)",
+      "agency": "Compostela Valley State College"
+   },
+   {
+      "uacs": "09001",
+      "department": "Department of Energy (DOE)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "10001",
+      "department": "Department of Environment and Natural Resources (DENR)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "10002",
+      "department": "Department of Environment and Natural Resources (DENR)",
+      "agency": "Environmental Management Bureau"
+   },
+   {
+      "uacs": "10003",
+      "department": "Department of Environment and Natural Resources (DENR)",
+      "agency": "Mines and Geo-Sciences Bureau"
+   },
+   {
+      "uacs": "10004",
+      "department": "Department of Environment and Natural Resources (DENR)",
+      "agency": "National Mapping and Resource Information Authority"
+   },
+   {
+      "uacs": "10005",
+      "department": "Department of Environment and Natural Resources (DENR)",
+      "agency": "National Water Resources Board"
+   },
+   {
+      "uacs": "10006",
+      "department": "Department of Environment and Natural Resources (DENR)",
+      "agency": "Palawan Council for Sustainable Development Staff"
+   },
+   {
+      "uacs": "11001",
+      "department": "Department of Finance (DOF)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "11002",
+      "department": "Department of Finance (DOF)",
+      "agency": "Bureau of Customs"
+   },
+   {
+      "uacs": "11003",
+      "department": "Department of Finance (DOF)",
+      "agency": "Bureau of Internal Revenue"
+   },
+   {
+      "uacs": "11004",
+      "department": "Department of Finance (DOF)",
+      "agency": "Bureau of Local Government Finance"
+   },
+   {
+      "uacs": "11005",
+      "department": "Department of Finance (DOF)",
+      "agency": "Bureau of the Treasury"
+   },
+   {
+      "uacs": "11006",
+      "department": "Department of Finance (DOF)",
+      "agency": "Central Board of Assessment Appeals"
+   },
+   {
+      "uacs": "11007",
+      "department": "Department of Finance (DOF)",
+      "agency": "Cooperative Development Authority"
+   },
+   {
+      "uacs": "11008",
+      "department": "Department of Finance (DOF)",
+      "agency": "Insurance Commission"
+   },
+   {
+      "uacs": "11009",
+      "department": "Department of Finance (DOF)",
+      "agency": "National Tax Research Center"
+   },
+   {
+      "uacs": "11010",
+      "department": "Department of Finance (DOF)",
+      "agency": "Privatization and Management Office"
+   },
+   {
+      "uacs": "11011",
+      "department": "Department of Finance (DOF)",
+      "agency": "Securities and Exchange Commission"
+   },
+   {
+      "uacs": "12001",
+      "department": "Department of Foreign Affairs (DFA)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "12002",
+      "department": "Department of Foreign Affairs (DFA)",
+      "agency": "Foreign Service Institute"
+   },
+   {
+      "uacs": "12003",
+      "department": "Department of Foreign Affairs (DFA)",
+      "agency": "Technical Cooperation Council of the Philippines"
+   },
+   {
+      "uacs": "12004",
+      "department": "Department of Foreign Affairs (DFA)",
+      "agency": "UNESCO National Commission of the Philippines"
+   },
+   {
+      "uacs": "13001",
+      "department": "Department of Health (DOH)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "13002",
+      "department": "Department of Health (DOH)",
+      "agency": "Commission on Population"
+   },
+   {
+      "uacs": "13003",
+      "department": "Department of Health (DOH)",
+      "agency": "National Nutrition Council"
+   },
+   {
+      "uacs": "14001",
+      "department": "Department of the Interior and Local Government (DILG)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "14002",
+      "department": "Department of the Interior and Local Government (DILG)",
+      "agency": "Bureau of Fire Protection"
+   },
+   {
+      "uacs": "14003",
+      "department": "Department of the Interior and Local Government (DILG)",
+      "agency": "Bureau of Jail Management and Penology"
+   },
+   {
+      "uacs": "14004",
+      "department": "Department of the Interior and Local Government (DILG)",
+      "agency": "Local Government Academy"
+   },
+   {
+      "uacs": "14005",
+      "department": "Department of the Interior and Local Government (DILG)",
+      "agency": "National Police Commission"
+   },
+   {
+      "uacs": "14006",
+      "department": "Department of the Interior and Local Government (DILG)",
+      "agency": "Philippine National Police"
+   },
+   {
+      "uacs": "14007",
+      "department": "Department of the Interior and Local Government (DILG)",
+      "agency": "Philippine Public Safety College"
+   },
+   {
+      "uacs": "15001",
+      "department": "Department of Justice (DOJ)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "15002",
+      "department": "Department of Justice (DOJ)",
+      "agency": "Bureau of Corrections"
+   },
+   {
+      "uacs": "15003",
+      "department": "Department of Justice (DOJ)",
+      "agency": "Bureau of Immigration"
+   },
+   {
+      "uacs": "15004",
+      "department": "Department of Justice (DOJ)",
+      "agency": "Land Registration Authority"
+   },
+   {
+      "uacs": "15005",
+      "department": "Department of Justice (DOJ)",
+      "agency": "National Bureau of Investigation"
+   },
+   {
+      "uacs": "15006",
+      "department": "Department of Justice (DOJ)",
+      "agency": "Office of the Government Corporate Counsel"
+   },
+   {
+      "uacs": "15007",
+      "department": "Department of Justice (DOJ)",
+      "agency": "Office of the Solicitor General"
+   },
+   {
+      "uacs": "15008",
+      "department": "Department of Justice (DOJ)",
+      "agency": "Parole and Probation Administration"
+   },
+   {
+      "uacs": "15009",
+      "department": "Department of Justice (DOJ)",
+      "agency": "Presidential Commission on Good Government"
+   },
+   {
+      "uacs": "15010",
+      "department": "Department of Justice (DOJ)",
+      "agency": "Public Attorney's Office"
+   },
+   {
+      "uacs": "16001",
+      "department": "Department of Labor and Employment (DOLE)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "16002",
+      "department": "Department of Labor and Employment (DOLE)",
+      "agency": "Institute for Labor Studies"
+   },
+   {
+      "uacs": "16003",
+      "department": "Department of Labor and Employment (DOLE)",
+      "agency": "National Conciliation and Mediation Board"
+   },
+   {
+      "uacs": "16004",
+      "department": "Department of Labor and Employment (DOLE)",
+      "agency": "National Labor Relations Commission"
+   },
+   {
+      "uacs": "16005",
+      "department": "Department of Labor and Employment (DOLE)",
+      "agency": "National Maritime Polytechnic"
+   },
+   {
+      "uacs": "16006",
+      "department": "Department of Labor and Employment (DOLE)",
+      "agency": "National Wages and Productivity Commission"
+   },
+   {
+      "uacs": "16007",
+      "department": "Department of Labor and Employment (DOLE)",
+      "agency": "Philippine Overseas Employment Administration"
+   },
+   {
+      "uacs": "16008",
+      "department": "Department of Labor and Employment (DOLE)",
+      "agency": "Professional Regulation Commission"
+   },
+   {
+      "uacs": "16009",
+      "department": "Department of Labor and Employment (DOLE)",
+      "agency": "Technical Education and Skills Development Authority"
+   },
+   {
+      "uacs": "16010",
+      "department": "Department of Labor and Employment (DOLE)",
+      "agency": "Overseas Workers Welfare Administration"
+   },
+   {
+      "uacs": "17001",
+      "department": "Department of National Defense (DND)",
+      "agency": "Office of the Secretary - Proper"
+   },
+   {
+      "uacs": "17002",
+      "department": "Department of National Defense (DND)",
+      "agency": "Government Arsenal"
+   },
+   {
+      "uacs": "17003",
+      "department": "Department of National Defense (DND)",
+      "agency": "National Defense College of the Philippines"
+   },
+   {
+      "uacs": "17004",
+      "department": "Department of National Defense (DND)",
+      "agency": "Office of Civil Defense"
+   },
+   {
+      "uacs": "17005",
+      "department": "Department of National Defense (DND)",
+      "agency": "Philippine Veterans Affairs Office (PVAO) - Proper"
+   },
+   {
+      "uacs": "17006",
+      "department": "Department of National Defense (DND)",
+      "agency": "Veterans Memorial Medical Center"
+   },
+   {
+      "uacs": "17007",
+      "department": "Department of National Defense (DND)",
+      "agency": "Philippine Army ( Land Forces )"
+   },
+   {
+      "uacs": "17008",
+      "department": "Department of National Defense (DND)",
+      "agency": "Philippine Air Force ( Air Forces )"
+   },
+   {
+      "uacs": "17009",
+      "department": "Department of National Defense (DND)",
+      "agency": "Philippine Navy ( Naval Forces )"
+   },
+   {
+      "uacs": "17010",
+      "department": "Department of National Defense (DND)",
+      "agency": "General Headquarters, AFP and AFP-Wide Service Support Units (AFPWSSUS)"
+   },
+   {
+      "uacs": "18001",
+      "department": "Department of Public Works and Highways (DPWH)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "19001",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "19002",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Advanced Science and Technology Institute"
+   },
+   {
+      "uacs": "19003",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Food and Nutrition Research Institute"
+   },
+   {
+      "uacs": "19004",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Forest Products Research and Development Institute"
+   },
+   {
+      "uacs": "19005",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Industrial Technology Development Institute"
+   },
+   {
+      "uacs": "19006",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Information and Communications Technology Office"
+   },
+   {
+      "uacs": "19007",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Metals Industry Research and Development Center"
+   },
+   {
+      "uacs": "19008",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "National Academy of Science and Technology"
+   },
+   {
+      "uacs": "19009",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "National Research Council of the Philippines"
+   },
+   {
+      "uacs": "19010",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Philippine Atmospheric, Geophysical and Astronomical Services Administration"
+   },
+   {
+      "uacs": "19011",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development"
+   },
+   {
+      "uacs": "19012",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Philippine Council for Health Research and Development"
+   },
+   {
+      "uacs": "19013",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Philippine Council for Industry, Energy and Emerging Technology Research and Development (PCIEERD)"
+   },
+   {
+      "uacs": "19014",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Philippine Institute of Volcanology and Seismology"
+   },
+   {
+      "uacs": "19015",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Philippine Nuclear Research Institute"
+   },
+   {
+      "uacs": "19016",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Philippine Science High School"
+   },
+   {
+      "uacs": "19017",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Philippine Textile Research Institute"
+   },
+   {
+      "uacs": "19018",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Science Education Institute"
+   },
+   {
+      "uacs": "19019",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Science and Technology Information Institute"
+   },
+   {
+      "uacs": "19020",
+      "department": "Department of Science and Technology (DOST)",
+      "agency": "Technology Application and Promotion Institute"
+   },
+   {
+      "uacs": "20001",
+      "department": "Department of Social Welfare and Development (DSWD)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "20002",
+      "department": "Department of Social Welfare and Development (DSWD)",
+      "agency": "Council for the Welfare of Children"
+   },
+   {
+      "uacs": "20003",
+      "department": "Department of Social Welfare and Development (DSWD)",
+      "agency": "Inter-Country Adoption Board"
+   },
+   {
+      "uacs": "20004",
+      "department": "Department of Social Welfare and Development (DSWD)",
+      "agency": "National Council on Disability Affairs"
+   },
+   {
+      "uacs": "20005",
+      "department": "Department of Social Welfare and Development (DSWD)",
+      "agency": "National Youth Commission"
+   },
+   {
+      "uacs": "20006",
+      "department": "Department of Social Welfare and Development (DSWD)",
+      "agency": "Juvenile Justice and Welfare Council"
+   },
+   {
+      "uacs": "21001",
+      "department": "Department of Tourism (DOT)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "21002",
+      "department": "Department of Tourism (DOT)",
+      "agency": "Intramuros Administration"
+   },
+   {
+      "uacs": "21003",
+      "department": "Department of Tourism (DOT)",
+      "agency": "National Parks Development Committee"
+   },
+   {
+      "uacs": "22001",
+      "department": "Department of Trade and Industry (DTI)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "22002",
+      "department": "Department of Trade and Industry (DTI)",
+      "agency": "Board of Investments"
+   },
+   {
+      "uacs": "22003",
+      "department": "Department of Trade and Industry (DTI)",
+      "agency": "Construction Industry Authority of the Philippines"
+   },
+   {
+      "uacs": "22004",
+      "department": "Department of Trade and Industry (DTI)",
+      "agency": "Construction Manpower Development Foundation"
+   },
+   {
+      "uacs": "22005",
+      "department": "Department of Trade and Industry (DTI)",
+      "agency": "Philippine Trade Training Center"
+   },
+   {
+      "uacs": "22006",
+      "department": "Department of Trade and Industry (DTI)",
+      "agency": "Design Center of the Philippines"
+   },
+   {
+      "uacs": "22007",
+      "department": "Department of Trade and Industry (DTI)",
+      "agency": "Construction Industry Authority of the Philippines (CIAP)"
+   },
+   {
+      "uacs": "23001",
+      "department": "Department of Transportation and Communications (DOTC)",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "23002",
+      "department": "Department of Transportation and Communications (DOTC)",
+      "agency": "Civil Aeronautics Board"
+   },
+   {
+      "uacs": "23003",
+      "department": "Department of Transportation and Communications (DOTC)",
+      "agency": "Maritime Industry Authority"
+   },
+   {
+      "uacs": "23004",
+      "department": "Department of Transportation and Communications (DOTC)",
+      "agency": "Office of Transportation Cooperatives"
+   },
+   {
+      "uacs": "23005",
+      "department": "Department of Transportation and Communications (DOTC)",
+      "agency": "Office for Transportation Security"
+   },
+   {
+      "uacs": "23006",
+      "department": "Department of Transportation and Communications (DOTC)",
+      "agency": "Philippine Coast Guard"
+   },
+   {
+      "uacs": "23007",
+      "department": "Department of Transportation and Communications (DOTC)",
+      "agency": "Toll Regulatory Board"
+   },
+   {
+      "uacs": "24001",
+      "department": "National Economic and Development Authority (NEDA)",
+      "agency": "Office of the Director-General"
+   },
+   {
+      "uacs": "24002",
+      "department": "National Economic and Development Authority (NEDA)",
+      "agency": "National Statistical Coordination Board"
+   },
+   {
+      "uacs": "24003",
+      "department": "National Economic and Development Authority (NEDA)",
+      "agency": "National Statistics Office"
+   },
+   {
+      "uacs": "24004",
+      "department": "National Economic and Development Authority (NEDA)",
+      "agency": "Philippine National Volunteer Service Coordinating Agency"
+   },
+   {
+      "uacs": "24005",
+      "department": "National Economic and Development Authority (NEDA)",
+      "agency": "Public-Private Partnership Center of the Philippines"
+   },
+   {
+      "uacs": "24006",
+      "department": "National Economic and Development Authority (NEDA)",
+      "agency": "Philippine Statistical Research and Training Institute (formerly Statistical Research and Training Center)"
+   },
+   {
+      "uacs": "24007",
+      "department": "National Economic and Development Authority (NEDA)",
+      "agency": "Tariff Commission"
+   },
+   {
+      "uacs": "24008",
+      "department": "National Economic and Development Authority (NEDA)",
+      "agency": "Philippine Statistics Authority"
+   },
+   {
+      "uacs": "25001",
+      "department": "Presidential Communications Operations Office (PCOO)",
+      "agency": "Presidential Communications Operations Office (Proper)"
+   },
+   {
+      "uacs": "25002",
+      "department": "Presidential Communications Operations Office (PCOO)",
+      "agency": "Bureau of Broadcast Services"
+   },
+   {
+      "uacs": "25003",
+      "department": "Presidential Communications Operations Office (PCOO)",
+      "agency": "Bureau of Communications Services"
+   },
+   {
+      "uacs": "25004",
+      "department": "Presidential Communications Operations Office (PCOO)",
+      "agency": "National Printing Office"
+   },
+   {
+      "uacs": "25005",
+      "department": "Presidential Communications Operations Office (PCOO)",
+      "agency": "News and Information Bureau"
+   },
+   {
+      "uacs": "25006",
+      "department": "Presidential Communications Operations Office (PCOO)",
+      "agency": "Philippine Information Agency"
+   },
+   {
+      "uacs": "25007",
+      "department": "Presidential Communications Operations Office (PCOO)",
+      "agency": "Presidential Broadcast Staff (RTVM)"
+   },
+   {
+      "uacs": "26001",
+      "department": "Other Executive Offices",
+      "agency": "Anti-Money Laundering Council"
+   },
+   {
+      "uacs": "26002",
+      "department": "Other Executive Offices",
+      "agency": "Climate Change Commission"
+   },
+   {
+      "uacs": "26003",
+      "department": "Other Executive Offices",
+      "agency": "Commission on Filipinos Overseas"
+   },
+   {
+      "uacs": "26004",
+      "department": "Other Executive Offices",
+      "agency": "Commission on Higher Education"
+   },
+   {
+      "uacs": "26005",
+      "department": "Other Executive Offices",
+      "agency": "Commission on the Filipino Language"
+   },
+   {
+      "uacs": "26006",
+      "department": "Other Executive Offices",
+      "agency": "Dangerous Drugs Board"
+   },
+   {
+      "uacs": "26007",
+      "department": "Other Executive Offices",
+      "agency": "Early Childhood Care and Development Council"
+   },
+   {
+      "uacs": "26008",
+      "department": "Other Executive Offices",
+      "agency": "Energy Regulatory Commission"
+   },
+   {
+      "uacs": "26009",
+      "department": "Other Executive Offices",
+      "agency": "Film Development Council of the Philippines"
+   },
+   {
+      "uacs": "26010",
+      "department": "Other Executive Offices",
+      "agency": "Games and Amusement Board"
+   },
+   {
+      "uacs": "26011",
+      "department": "Other Executive Offices",
+      "agency": "Governance Commission for Government-Owned or Controlled Corporations"
+   },
+   {
+      "uacs": "26012",
+      "department": "Other Executive Offices",
+      "agency": "Housing and Land Use Regulatory Board"
+   },
+   {
+      "uacs": "26013",
+      "department": "Other Executive Offices",
+      "agency": "Housing and Urban Development Coordinating Council"
+   },
+   {
+      "uacs": "26014",
+      "department": "Other Executive Offices",
+      "agency": "Mindanao Development Authority"
+   },
+   {
+      "uacs": "26015",
+      "department": "Other Executive Offices",
+      "agency": "Movie and Television Review and Classification Board"
+   },
+   {
+      "uacs": "26016",
+      "department": "Other Executive Offices",
+      "agency": "National Anti-Poverty Commission"
+   },
+   {
+      "uacs": "26017",
+      "department": "Other Executive Offices",
+      "agency": "National Commission for Culture and the Arts-Proper"
+   },
+   {
+      "uacs": "26018",
+      "department": "Other Executive Offices",
+      "agency": "National Historical Commission of the Philippines"
+   },
+   {
+      "uacs": "26019",
+      "department": "Other Executive Offices",
+      "agency": "National Library of the Philippines"
+   },
+   {
+      "uacs": "26020",
+      "department": "Other Executive Offices",
+      "agency": "National Archives of the Philippines"
+   },
+   {
+      "uacs": "26021",
+      "department": "Other Executive Offices",
+      "agency": "National Commission on Indigenous People"
+   },
+   {
+      "uacs": "26022",
+      "department": "Other Executive Offices",
+      "agency": "National Commission on Muslim Filipinos (Office on Muslim Affairs)"
+   },
+   {
+      "uacs": "26023",
+      "department": "Other Executive Offices",
+      "agency": "National Intelligence Coordinating Agency"
+   },
+   {
+      "uacs": "26024",
+      "department": "Other Executive Offices",
+      "agency": "National Security Council"
+   },
+   {
+      "uacs": "26025",
+      "department": "Other Executive Offices",
+      "agency": "National Telecommunications Commission"
+   },
+   {
+      "uacs": "26026",
+      "department": "Other Executive Offices",
+      "agency": "Office of the Presidential Adviser on the Peace Process"
+   },
+   {
+      "uacs": "26027",
+      "department": "Other Executive Offices",
+      "agency": "Optical Media Board"
+   },
+   {
+      "uacs": "26028",
+      "department": "Other Executive Offices",
+      "agency": "Pasig River Rehabilitation Commission"
+   },
+   {
+      "uacs": "26029",
+      "department": "Other Executive Offices",
+      "agency": "Philippine Commission on Women (National Commission on the Role of Filipino Women)"
+   },
+   {
+      "uacs": "26030",
+      "department": "Other Executive Offices",
+      "agency": "Philippine Drug Enforcement Agency"
+   },
+   {
+      "uacs": "26031",
+      "department": "Other Executive Offices",
+      "agency": "Philippine Racing Commission"
+   },
+   {
+      "uacs": "26032",
+      "department": "Other Executive Offices",
+      "agency": "Philippine Sports Commission"
+   },
+   {
+      "uacs": "26033",
+      "department": "Other Executive Offices",
+      "agency": "Presidential Commission for the Urban Poor"
+   },
+   {
+      "uacs": "26034",
+      "department": "Other Executive Offices",
+      "agency": "Presidential Communications Development and Strategic Planning Office"
+   },
+   {
+      "uacs": "26035",
+      "department": "Other Executive Offices",
+      "agency": "Presidential Legislative Liaison Office"
+   },
+   {
+      "uacs": "26036",
+      "department": "Other Executive Offices",
+      "agency": "Presidential Management Staff"
+   },
+   {
+      "uacs": "26037",
+      "department": "Other Executive Offices",
+      "agency": "Fertilizer and Pesticide Authority"
+   },
+   {
+      "uacs": "26038",
+      "department": "Other Executive Offices",
+      "agency": "Philippine Competition Commission"
+   },
+   {
+      "uacs": "26039",
+      "department": "Other Executive Offices",
+      "agency": "National Privacy Commission"
+   },
+   {
+      "uacs": "26040",
+      "department": "Other Executive Offices",
+      "agency": "National Youth Commission"
+   },
+   {
+      "uacs": "26041",
+      "department": "Other Executive Offices",
+      "agency": "Technical Education and Skills Development Authority"
+   },
+   {
+      "uacs": "26042",
+      "department": "Other Executive Offices",
+      "agency": "Cooperative Development Authority"
+   },
+   {
+      "uacs": "27001",
+      "department": "Autonomous Region in Muslim Mindanao (ARMM)",
+      "agency": "Autonomous Regional Government in Muslim Mindanao"
+   },
+   {
+      "uacs": "28001",
+      "department": "Joint Legislative-Executive Councils",
+      "agency": "Legislative-Executive Development Advisory Council"
+   },
+   {
+      "uacs": "29001",
+      "department": "The Judiciary",
+      "agency": "Supreme Court of the Philippines and the Lower Courts"
+   },
+   {
+      "uacs": "29002",
+      "department": "The Judiciary",
+      "agency": "Presidential Electoral Tribunal"
+   },
+   {
+      "uacs": "29003",
+      "department": "The Judiciary",
+      "agency": "Sandiganbayan"
+   },
+   {
+      "uacs": "29004",
+      "department": "The Judiciary",
+      "agency": "Court of Appeals"
+   },
+   {
+      "uacs": "29005",
+      "department": "The Judiciary",
+      "agency": "Court of Tax Appeals"
+   },
+   {
+      "uacs": "30001",
+      "department": "Civil Service Commission (CSC)",
+      "agency": "Civil Service Commission"
+   },
+   {
+      "uacs": "30002",
+      "department": "Civil Service Commission (CSC)",
+      "agency": "Career Executive Service Board"
+   },
+   {
+      "uacs": "31000",
+      "department": "Commission on Audit (COA)",
+      "agency": "Commission on Audit (COA)"
+   },
+   {
+      "uacs": "32000",
+      "department": "Commission on Elections (COMELEC)",
+      "agency": "Commission on Elections (COMELEC)"
+   },
+   {
+      "uacs": "33000",
+      "department": "Office of the Ombudsman",
+      "agency": "Office of the Ombudsman"
+   },
+   {
+      "uacs": "34000",
+      "department": "Commission on Human Rights (CHR)",
+      "agency": "Commission on Human Rights (CHR)"
+   },
+   {
+      "uacs": "34001",
+      "department": "Commission on Human Rights (CHR)",
+      "agency": "Commission on Human Rights (CHR)"
+   },
+   {
+      "uacs": "34002",
+      "department": "Commission on Human Rights (CHR)",
+      "agency": "Human Rights Victims' Claims Board"
+   },
+   {
+      "uacs": "34003",
+      "department": "Commission on Human Rights (CHR)",
+      "agency": "Human Rights Violations Victims' Memorial Commission"
+   },
+   {
+      "uacs": "35001",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Land Bank of the Philippines"
+   },
+   {
+      "uacs": "35002",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Human Settlements Development Corporation"
+   },
+   {
+      "uacs": "35003",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Dairy Authority"
+   },
+   {
+      "uacs": "35004",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Food Authority"
+   },
+   {
+      "uacs": "35005",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Irrigation Administration"
+   },
+   {
+      "uacs": "35006",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Livelihood Development Corporation"
+   },
+   {
+      "uacs": "35007",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Tobacco Administration"
+   },
+   {
+      "uacs": "35008",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Coconut Authority"
+   },
+   {
+      "uacs": "35009",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Crop Insurance Corporation"
+   },
+   {
+      "uacs": "35010",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Fisheries Development Authority"
+   },
+   {
+      "uacs": "35011",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Rice Research Institute"
+   },
+   {
+      "uacs": "35012",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Sugar Corporation"
+   },
+   {
+      "uacs": "35013",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Quedan and Rural Credit Guarantee Corporation"
+   },
+   {
+      "uacs": "35014",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Sugar Regulatory Administration"
+   },
+   {
+      "uacs": "35015",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Electrification Administration"
+   },
+   {
+      "uacs": "35016",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Power Corporation"
+   },
+   {
+      "uacs": "35017",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Transmission Corporation"
+   },
+   {
+      "uacs": "35018",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine National Oil Company"
+   },
+   {
+      "uacs": "35019",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Power Sector Assets and Liabilities Management Corporation"
+   },
+   {
+      "uacs": "35020",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Laguna Lake Development Authority"
+   },
+   {
+      "uacs": "35021",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Resources Development Corporation"
+   },
+   {
+      "uacs": "35022",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Reclamation Authority"
+   },
+   {
+      "uacs": "35023",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Deposit Insurance Corporation"
+   },
+   {
+      "uacs": "35024",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Trade and Investment Development Corporation of the Phils."
+   },
+   {
+      "uacs": "35025",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Lung Center of the Philippines"
+   },
+   {
+      "uacs": "35026",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Kidney and Transplant Institute"
+   },
+   {
+      "uacs": "35027",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Children’s Medical Center"
+   },
+   {
+      "uacs": "35028",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Health Insurance Corporation"
+   },
+   {
+      "uacs": "35029",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Heart Center"
+   },
+   {
+      "uacs": "35030",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Institute of Traditional and Alternative Health Care"
+   },
+   {
+      "uacs": "35031",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Employee’s Compensation Commission"
+   },
+   {
+      "uacs": "35032",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Occupational Safety and Health Center"
+   },
+   {
+      "uacs": "35033",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "PHIVIDEC Industrial Authority"
+   },
+   {
+      "uacs": "35034",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Local Water Utilities Administration"
+   },
+   {
+      "uacs": "35035",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Metropolitan Waterworks and Sewerage System Regulatory"
+   },
+   {
+      "uacs": "35036",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Metropolitan Waterworks and Sewerage System Residual"
+   },
+   {
+      "uacs": "35037",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Technology Resource Center"
+   },
+   {
+      "uacs": "35038",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Duty Free Philippines Corporation"
+   },
+   {
+      "uacs": "35039",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Nayong Pilipino Foundation"
+   },
+   {
+      "uacs": "35040",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Tourism Infrastructure and Enterprise Zone Authority"
+   },
+   {
+      "uacs": "35041",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Tourism Promotions Board"
+   },
+   {
+      "uacs": "35042",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Aurora Pacific Economic Zone and Freeport Authority"
+   },
+   {
+      "uacs": "35043",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Center for International Trade Expositions and Missions"
+   },
+   {
+      "uacs": "35044",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Cottage Industry Technology Center"
+   },
+   {
+      "uacs": "35045",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Development Company"
+   },
+   {
+      "uacs": "35046",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Economic Zone Authority"
+   },
+   {
+      "uacs": "35047",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine International Trading Corporation"
+   },
+   {
+      "uacs": "35048",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Retirement Authority"
+   },
+   {
+      "uacs": "35049",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Small Business Corporation"
+   },
+   {
+      "uacs": "35050",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Cebu Port Authority"
+   },
+   {
+      "uacs": "35051",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Civil Aviation Authority of the Philippines"
+   },
+   {
+      "uacs": "35052",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Light Rail Transit Authority"
+   },
+   {
+      "uacs": "35053",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Mactan Cebu International Airport Authority"
+   },
+   {
+      "uacs": "35054",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Manila International Airport Authority"
+   },
+   {
+      "uacs": "35055",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Aerospace Development Corporation"
+   },
+   {
+      "uacs": "35056",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine National Railways"
+   },
+   {
+      "uacs": "35057",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Ports Authority"
+   },
+   {
+      "uacs": "35058",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Institute for Development Studies"
+   },
+   {
+      "uacs": "35059",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "People's Television Network, Inc."
+   },
+   {
+      "uacs": "35060",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Al-Amanah Islamic Investment Bank of the Philippines"
+   },
+   {
+      "uacs": "35061",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Authority of the Freeport Area of Bataan"
+   },
+   {
+      "uacs": "35062",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Bangko Sentral ng Pilipinas"
+   },
+   {
+      "uacs": "35063",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Bases Conversion and Development Authority (formerly Bases Conversion Development Authority"
+   },
+   {
+      "uacs": "35064",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Cagayan Economic Zone Authority"
+   },
+   {
+      "uacs": "35065",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Central Bank Board of Liquidations"
+   },
+   {
+      "uacs": "35066",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Credit Information Corporation"
+   },
+   {
+      "uacs": "35067",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Cultural Center of the Philippines"
+   },
+   {
+      "uacs": "35068",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Development Academy of the Philippines"
+   },
+   {
+      "uacs": "35069",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Development Bank of the Philippines"
+   },
+   {
+      "uacs": "35070",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Government Service Insurance System"
+   },
+   {
+      "uacs": "35071",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Home Development Mutual Fund"
+   },
+   {
+      "uacs": "35072",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Home Guaranty Corporation"
+   },
+   {
+      "uacs": "35073",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Home Mortgage Finance Corporation"
+   },
+   {
+      "uacs": "35074",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Housing Authority"
+   },
+   {
+      "uacs": "35075",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Partido Development Administration"
+   },
+   {
+      "uacs": "35076",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "People’s Credit and Finance Corporation"
+   },
+   {
+      "uacs": "35077",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Amusement and Gaming Corporation"
+   },
+   {
+      "uacs": "35078",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Center for Economic Development"
+   },
+   {
+      "uacs": "35079",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Charity Sweepstakes Office"
+   },
+   {
+      "uacs": "35080",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Postal Corporation"
+   },
+   {
+      "uacs": "35081",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Social Security System"
+   },
+   {
+      "uacs": "35082",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Southern Philippines Development Authority"
+   },
+   {
+      "uacs": "35083",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Subic Bay Metropolitan Authority"
+   },
+   {
+      "uacs": "35084",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Zamboanga City Special Economic Zone Authority"
+   },
+   {
+      "uacs": "35085",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "BSGC - Others"
+   },
+   {
+      "uacs": "35086",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Social Housing Finance Corporation"
+   },
+   {
+      "uacs": "35087",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Intercontinental Broadcasting Corporation"
+   },
+   {
+      "uacs": "35088",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "National Food Authority"
+   },
+   {
+      "uacs": "35089",
+      "department": "Budgetary Support to Government Corporations",
+      "agency": "Philippine Coconut Authority"
+   },
+   {
+      "uacs": "36001",
+      "department": "Allocations to Local Government Units",
+      "agency": "Metropolitan Manila Development Authority"
+   },
+   {
+      "uacs": "37001",
+      "department": "Department of Information and Communications Technology",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "37002",
+      "department": "Department of Information and Communications Technology",
+      "agency": "National Telecommunications Commission"
+   },
+   {
+      "uacs": "37003",
+      "department": "Department of Information and Communications Technology",
+      "agency": "National Privacy Commission"
+   },
+   {
+      "uacs": "37004",
+      "department": "Department of Information and Communications Technology",
+      "agency": "Cybercrime Investigation and Coordination Center"
+   },
+   {
+      "uacs": "38001",
+      "department": "Department of Transportation",
+      "agency": "Office of the Secretary"
+   },
+   {
+      "uacs": "38002",
+      "department": "Department of Transportation",
+      "agency": "Civil Aeronautics Board"
+   },
+   {
+      "uacs": "38003",
+      "department": "Department of Transportation",
+      "agency": "Maritime Industry Authority (MARINA)"
+   },
+   {
+      "uacs": "38004",
+      "department": "Department of Transportation",
+      "agency": "Office of Transportation Cooperatives"
+   },
+   {
+      "uacs": "38005",
+      "department": "Department of Transportation",
+      "agency": "Office for Transportation Security"
+   },
+   {
+      "uacs": "38006",
+      "department": "Department of Transportation",
+      "agency": "Philippine Coast Guard"
+   },
+   {
+      "uacs": "38007",
+      "department": "Department of Transportation",
+      "agency": "Toll Regulatory Board"
+   }
+]
