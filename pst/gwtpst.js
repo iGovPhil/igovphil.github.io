@@ -1,13 +1,26 @@
 /**
  * A Stand-alone Philippine Standard Time (PST) plugin script for synching the display time to a more standard PST time
  * this plugin prints a time widget that is in-sync on the Philippine Time Server
- * Author: Voltz Jeturian (jeturian@gmail.com, voltz.jeturian@icto.dost.gov.ph)
+ * Author: Voltz Jeturian (jeturian@gmail.com, voltz.jeturian@dict.gov.ph)
  * Project made possible by: AO39 Component of iGovPhil Project ICTO-DOST Philippines
  */
-var gwtpst = gwtpst || function(elementId, options){
+var gwtpst = gwtpst || function(){
   // shim Date.now() function
   if (!Date.now){
     Date.now = function() { return new Date().getTime(); }
+  }
+
+  if(arguments.length == 1){
+    if(typeof arguments[0] === 'object'){
+      var options = arguments[0];
+    }
+    else{
+      var elementId = arguments[0];
+    }
+  }
+  else if(arguments.length == 2){
+    var elementId = arguments[0];
+    var options = arguments[1];
   }
 
   // initialize time difference
@@ -28,13 +41,12 @@ var gwtpst = gwtpst || function(elementId, options){
     return false;
   }
 
-  this._element = document.getElementById(elementId);
-  if(typeof this._element == 'null'){
+  if(typeof this.element == 'null'){
     throw new Error('Error! invalid elementId supplied. Element not found!');
     return false;
   }
 
-  this.jsonpRequest(elementId);
+  this.jsonpRequest();
 };
 
 gwtpst.prototype = {
@@ -61,7 +73,8 @@ gwtpst.prototype = {
   jsonpRequest: function(){
     var js = document.createElement('script'); js.id = 'gwt-pst-jsonp-time';
     js.src = this.url+'?'+this.time(); // must be no cache
-    this._element.parentNode.insertBefore(js, this._element.nextSibling);
+
+    this.element.parentNode.insertBefore(js, this.element.nextSibling);
   },
   _jsonpResponseProcess: function(func){
     if(response = func()){
@@ -99,7 +112,7 @@ gwtpst.prototype = {
       timer = scope.timers[i];
       timer.refresh(serverTime);
     }
-    // scope._element.innerHTML = scope.timeFormat(scope._serverTime);
+    // scope.element.innerHTML = scope.timeFormat(scope._serverTime);
     // $('#timer').html(formattedTime);
     setTimeout(function(){
       scope.timer(scope)
@@ -122,36 +135,92 @@ gwtpst.prototype = {
   extend : function(a,b){
     // var c = {};
     for(var attr in a){ this[attr] = a[attr]; }
+    if(typeof b === 'undefined'){
+      return this;
+    }
     for(var attr in b){ this[attr] = b[attr]; }
     return this;
   }
 };
 
-var gwtpstTime = gwtpstTime || function(elementId, options){
+/**
+ * function that creates multiple arguments
+ */
+var gwtpstTime = gwtpstTime || function(){
   var gwtpst = gwtPstWidget;
   if(!gwtpst.hasStarted()){
     throw new Error('Error! gwtpst did not initialized!');
     return false;
   }
+
+  if(arguments.length == 1){
+    if(typeof arguments[0] === 'object'){
+      var options = arguments[0];
+    }
+    else{
+      var elementId = arguments[0];
+    }
+  }
+  else if(arguments.length == 2){
+    var elementId = arguments[0];
+    var options = arguments[1];
+  }
+
   defaultOptions = {
     elementId: elementId, // elementId of the time widget
-    format: 'mmmm dd, yyyy, h:MM:ss TT', // will display "February 16, 2016 10:30:23 AM" format
+    timerClass: 'pst-timer', // timerCLass of the time widget, use this for multiple selection of timers
+    format: 'dddd, mmmm dd, yyyy, h:MM:ss TT', // will display "Monday, February 16, 2016 10:30:23 AM" format
     prefix: '', // prefix text before time display
     suffix: '', // suffix text after time displa
     displaySource: true, // set to true to display the source is from official PST link
+    keyboardTrap: false, // set to true to display time enclosed in anchor tag to avoid keyboard trap issue!
   };
   this.extend(defaultOptions, options);
-  this._element = document.getElementById(elementId);
-  if(this._element == null){
-    throw new Error('Element not found! Element with "' + elementId + '"" was not found.');
-    return false;
+
+  // override other pst object
+  this.gwtpst = gwtpst;
+
+  if(typeof this._element === 'undefined'){
+    if(typeof this.options.elementId === 'string'){
+      this._element = document.getElementById(this.options.elementId);
+      if(this._element == null){
+        throw new Error('Element not found! Element with ID of "' + this.options.elementId + '"" was not found.');
+        return false;
+      }
+      this.prepare();
+      return this;
+    }
+    if(typeof this.options.timerClass === 'string'){
+      this._elements = document.getElementsByClassName(this.options.timerClass);
+      if(this._elements.length == 1){
+        this._element = this._elements[0];
+        this.prepare();
+        return this;
+      }
+      if(this._elements.length == 0){
+        throw new Error('Element class not found! Elements with class of "' + this.timerCLass + '"" was not found.');
+        return false;
+      }
+
+      // if multiple elements are registered scan all then reinitialize timer for each then register each object created
+      for (var i = 0; i < this._elements.length; i++) {
+        // TODO: merge options
+        var singleOptions = this.options;
+        // unset the timerClass to prevent from endless looping
+        singleOptions.timerClass = undefined;
+        singleOptions.elementId = undefined;
+        timer = new gwtpstTime(singleOptions);
+        timer._element = this._elements[i];
+        timer.prepare();
+      }
+      return this;
+    }
   }
-  gwtpst.register(this);
 }
 
 gwtpstTime.prototype = {
   refresh: function(time){
-    this._element.innerHTML = this.prefix + dateFormat(time, this.format) + this.suffix;
+    this._element.innerHTML = this.options.prefix + dateFormat(time, this.options.format) + this.options.suffix;
   },
   // TODO: add event listeners
   /**
@@ -162,9 +231,36 @@ gwtpstTime.prototype = {
    */
   extend : function(a,b){
     // var c = {};
-    for(var attr in a){ this[attr] = a[attr]; }
-    for(var attr in b){ this[attr] = b[attr]; }
+    this.options = {};
+    for(var attr in a){
+      this.options[attr] = a[attr];
+    }
+    if(typeof b === 'undefined'){
+      return this;
+    }
+    for(var attr in b){ this.options[attr] = b[attr]; }
     return this;
+  },
+  /**
+   * prepares the timer before registering in pst object
+   */
+  prepare: function(){
+    // if keyboardTrap is set to true, enclose the object in anchor tag,
+    // and set the anchor tag as the new element
+    if(this.options.keyboardTrap == true){
+      var a = document.createElement('a');
+      a.setAttribute('href','#');
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        return false;
+      }, false);
+      a.style.textDecoration = "none";
+      a.style.color = "inherit";
+      this._element.appendChild(a);
+      this._element = a;
+    }
+
+    this.gwtpst.register(this);
   }
 }
 
@@ -263,17 +359,17 @@ var dateFormat = function () {
 
 // Some common format strings
 dateFormat.masks = {
-  "default":      "ddd mmm dd yyyy HH:MM:ss",
-  shortDate:      "m/d/yy",
-  mediumDate:     "mmm d, yyyy",
-  longDate:       "mmmm d, yyyy",
-  fullDate:       "dddd, mmmm d, yyyy",
-  shortTime:      "h:MM TT",
-  mediumTime:     "h:MM:ss TT",
-  longTime:       "h:MM:ss TT Z",
-  isoDate:        "yyyy-mm-dd",
-  isoTime:        "HH:MM:ss",
-  isoDateTime:    "yyyy-mm-dd'T'HH:MM:ss",
+  default: "dddd, mmmm dd, yyyy h:MM:ss TT",
+  shortDate: "m/d/yy",
+  mediumDate: "mmm d, yyyy",
+  longDate: "mmmm d, yyyy",
+  fullDate: "dddd, mmmm d, yyyy",
+  shortTime: "h:MM TT",
+  mediumTime: "h:MM:ss TT",
+  longTime: "h:MM:ss TT Z",
+  isoDate: "yyyy-mm-dd",
+  isoTime: "HH:MM:ss",
+  isoDateTime: "yyyy-mm-dd'T'HH:MM:ss",
   isoUtcDateTime: "UTC:yyyy-mm-dd'T'HH:MM:ss'Z'"
 };
 
@@ -296,9 +392,9 @@ Date.prototype.format = function (mask, utc) {
 
 var gwtPstWidget;
 var gwtpstInit = function(){
-  gwtPstWidget = new gwtpst('pst-time', {
+  gwtPstWidget = new gwtpst({
     element: document.getElementById('gwt-pst'),
-    url: '//gwhs.i.gov.ph/pst/jsonp_unix.php?'+new Date().getTime(),
+    url: '//gwhs.i.gov.ph/pst/jsonp_unix.php',
   });
 };
 gwtpstInit();

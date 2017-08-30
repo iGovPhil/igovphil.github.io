@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Time PST</title>
+    <title>Time PST - Keyboard Trap test</title>
     <style>
     <!--
     #pst-container{
@@ -44,7 +44,10 @@
 }(document, 'gwt-pst'));
 
 var gwtpstReady = function(){
-  new gwtpstTime('pst-time');
+  new gwtpstTime({
+    elementId: 'pst-time',
+    keyboardTrap: true
+  });
 }
 &lt;/script&gt;
 </pre>
@@ -63,7 +66,10 @@ var gwtpstReady = function(){
 }(document, 'gwt-pst'));
 
 var gwtpstReady = function(){
-  new gwtpstTime('pst-time');
+  new gwtpstTime({
+    elementId: 'pst-time',
+    keyboardTrap: true
+  });
 }
 </script>
 

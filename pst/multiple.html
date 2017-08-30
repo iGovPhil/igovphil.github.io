@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Time PST</title>
+    <title>PST Timer by Class selection</title>
     <style>
     <!--
     #pst-container{
@@ -28,11 +28,13 @@
 </head>
 <body>
 
-<h3>Embedding PST Timer</h3>
+<h3>Embedding Multiple PST Timer</h3>
 <pre>
 &lt;div id=&quot;pst-container&quot;&gt;
   &lt;div&gt;Philippine Standard Time:&lt;/div&gt;
-  &lt;div id=&quot;pst-time&quot;&gt;&lt;/div&gt;
+  <strong>&lt;div class=&quot;pst-timer&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;pst-timer&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;pst-timer&quot;&gt;&lt;/div&gt;</strong>
 &lt;/div&gt;
 
 &lt;script type=&quot;text/javascript&quot; id=&quot;gwt-pst&quot;&gt;
@@ -44,7 +46,9 @@
 }(document, 'gwt-pst'));
 
 var gwtpstReady = function(){
-  new gwtpstTime('pst-time');
+  new gwtpstTime({
+    <strong>timerClass: 'pst-timer'</strong>// Note: use timerClass option to select which class elements to select
+  });
 }
 &lt;/script&gt;
 </pre>
@@ -52,7 +56,9 @@ var gwtpstReady = function(){
 <h1>Sample Output</h1>
 <div id="pst-container">
 <div>Philippine Standard Time:</div>
-<div id="pst-time"></div>
+<div class="pst-timer"></div>
+<div class="pst-timer"></div>
+<div class="pst-timer"></div>
 </div>
 <script type="text/javascript" id="gwt-pst">
 (function(d, eId) {
@@ -63,7 +69,9 @@ var gwtpstReady = function(){
 }(document, 'gwt-pst'));
 
 var gwtpstReady = function(){
-  new gwtpstTime('pst-time');
+  new gwtpstTime({
+    timerClass: 'pst-timer'
+  });
 }
 </script>
 

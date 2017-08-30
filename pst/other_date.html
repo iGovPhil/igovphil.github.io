@@ -7,8 +7,8 @@
 <body>
 
 <h3>Other Date Format</h3>
+<h4>date format:</h4>
 <ul>
-  <li>date format:</li>
   <li>d - day of the month</li>
   <li>dd - day of the month with leading zeroes</li>
   <li>ddd - 3 letters abbreviation day of the week</li>
@@ -21,6 +21,8 @@
   <li>hh - hours in regular time with leading zeroes</li>
   <li>H - hours in military time</li>
   <li>HH - hours in military time with leading zeroes</li>
+  <li>M - minutes in regular time</li>
+  <li>MM - minutes in regular time with leading zeroes</li>
   <li>s - number of seconds</li>
   <li>ss - number of seconds with leading zeroes</li>
   <li>l - number of mili seconds in 3 digits</li>
@@ -33,9 +35,9 @@
   <li>o - GMT/UTC timezone offset</li>
   <li>S - Ordinal number suffix</li>
 </ul>
+<h4>Common format strings:</h4>
 <ul>
-  <li>Common format strings:</li>
-  <li>"default":      "dddd, mmmm dd, yyyy, h:mm:ss TT",</li>
+  <li>"default":      "dddd, mmmm dd, yyyy, h:MM:ss TT",</li>
   <li>shortDate:      "m/d/yy",</li>
   <li>mediumDate:     "mmm d, yyyy",</li>
   <li>longDate:       "mmmm d, yyyy",</li>
@@ -59,27 +61,27 @@
 }(document, 'gwt-pst'));
 
 var gwtpstReady = function(){
-  var otherFormat = 'dddd, mmmm dd, yyyy, h:mm:ss TT';
+  var otherFormat = 'dddd, mmmm dd, yyyy, h:MM:ss TT';
   var firstPst = new gwtpstTime('pst-time', {format: otherFormat});
 }
 &lt;/script&gt;
 </pre>
 
 <h1>Samples:</h1>
-<div><span id="time1"></span> -- Default: mmmm dd, yyyy, h:mm:ss TT</div>
+<div><span id="time1"></span> -- Default: dddd, mmmm dd, yyyy, h:MM:ss TT</div>
 <div><span id="time2"></span> -- m/d/yy</div>
 <div><span id="time3"></span> -- h:MM:ss TT Z</div>
 <div><span id="time4"></span> -- yyyy-mm-dd</div>
 <div><span id="time5"></span> -- UTC:yyyy-mm-dd'T'HH:MM:ss"Z"</div>
 <div><span id="time6"></span> -- mediumTime</div>
-<div id="pst-time"></div>
-<script type="text/javascript">
+
+<script type="text/javascript" id="gwt-pst">
 (function(d, eId) {
   var js, gjs = d.getElementById(eId);
   js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
   js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
   gjs.parentNode.insertBefore(js, gjs.nextSibling);
-}(document, 'pst-time'));
+}(document, 'gwt-pst'));
 
 var gwtpstReady = function(){
   new gwtpstTime('time1', {
@@ -102,5 +104,14 @@ var gwtpstReady = function(){
   });
 }
 </script>
+
+<h1>See other examples:</h1>
+<ul>
+  <li><a href="index.html">Basic</a></li>
+  <li><a href="other_date.html">Other Date Formats</a></li>
+  <li><a href="multiple.html">Multiple Timers</a></li>
+  <li><a href="keyboard_trap.html">keyboard trap test - single</a></li>
+  <li><a href="keyboard_trap_multiple.html">keyboard trap test - multiple</a></li>
+</ul>
 </body>
 </html>
