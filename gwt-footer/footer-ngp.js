@@ -36,7 +36,7 @@ FooterIframeInit = function(){
 
 if(typeof Liferay === "function" && typeof AUI === "function"){
   (function(Liferay, AUI){
-  AUI().ready('pst-module', function(A){
+  AUI().ready('footer-module', function(A){
     IFrameResizeInit();
     FooterIframeInit();
   });
