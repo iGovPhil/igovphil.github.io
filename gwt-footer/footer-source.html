@@ -48,21 +48,21 @@ html,body{height:100%;width:100%;font-family:'Roboto',sans-serif;-webkit-font-sm
 					<h4>About GOVPH</h4>
 					<p>Learn more about the Philippine government, its structure, how government works and the people behind it.</p>
 					<ul>
-						<li><a href="http://www.gov.ph/">Official Gazette</a></li>
-						<li><a href="http://data.gov.ph/">Open Data Portal</a></li>
-						<li><a href="http://www.gov.ph/feedback/idulog/">Send us your feedback</a></li>
+						<li><a ga-on="click" ga-event-category="External Links" ga-event-action="gov.ph" href="http://www.gov.ph/">GOV.PH</a></li>
+						<li><a ga-on="click" ga-event-category="External Links" ga-event-action="data.gov.ph" href="http://www.gov.ph/data">Open Data Portal</a></li>
+						<li><a ga-on="click" ga-event-category="External Links" ga-event-action="officialgazette" href="http://www.officialgazette.gov.ph">Official Gazette</a></li>
 					</ul>
 				</div>
 				<div class="large-6 medium-6 large-offset-1 medium-offset-1 columns">
 					<h4>Government Links</h4>
 					<ul>
-						<li><a href="http://president.gov.ph/">Office of the President</a></li>
-						<li><a href="http://ovp.gov.ph/">Office of the Vice President</a></li>
-						<li><a href="http://www.senate.gov.ph/">Senate of the Philippines</a></li>
-						<li><a href="http://www.congress.gov.ph/">House of Representatives</a></li>
-						<li><a href="http://sc.judiciary.gov.ph/">Supreme Court</a></li>
-						<li><a href="http://ca.judiciary.gov.ph/">Court of Appeals</a></li>
-						<li><a href="http://sb.judiciary.gov.ph/">Sandiganbayan</a></li>
+						<li><a ga-on="click" ga-event-category="External Links" ga-event-action="president.gov.ph" href="http://president.gov.ph/">Office of the President</a></li>
+						<li><a ga-on="click" ga-event-category="External Links" ga-event-action="ovp.gov.ph" href="http://ovp.gov.ph/">Office of the Vice President</a></li>
+						<li><a ga-on="click" ga-event-category="External Links" ga-event-action="www.senate.gov.ph" href="http://www.senate.gov.ph/">Senate of the Philippines</a></li>
+						<li><a ga-on="click" ga-event-category="External Links" ga-event-action="www.congress.gov.ph" href="http://www.congress.gov.ph/">House of Representatives</a></li>
+						<li><a ga-on="click" ga-event-category="External Links" ga-event-action="sc.judiciary.gov.ph" href="http://sc.judiciary.gov.ph/">Supreme Court</a></li>
+						<li><a ga-on="click" ga-event-category="External Links" ga-event-action="ca.judiciary.gov.ph" href="http://ca.judiciary.gov.ph/">Court of Appeals</a></li>
+						<li><a ga-on="click" ga-event-category="External Links" ga-event-action="sb.judiciary.gov.ph" href="http://sb.judiciary.gov.ph/">Sandiganbayan</a></li>
 					</ul>
 				</div>
 			</div>
@@ -83,6 +83,31 @@ html,body{height:100%;width:100%;font-family:'Roboto',sans-serif;-webkit-font-sm
 	    resetSize();
 	};
 
+	addEvent = function(element, evnt, funct){
+		if (element.attachEvent)
+			return element.attachEvent('on'+evnt, funct);
+		else
+			return element.addEventListener(evnt, funct, false);
+	}
+
+	// example
+	// addEvent(
+	// 	document.getElementById('myElement'),
+	// 	'click',
+	// 	function () { alert('hi!'); }
+	// );
+	callBackTimeout = function(callback, opt_timeout) {
+	  var called = false;
+	  function fn() {
+	    if (!called) {
+	      called = true;
+	      callback();
+	    }
+	  }
+	  setTimeout(fn, opt_timeout || 1000);
+	  return fn;
+	}
+
 	var init = function(){
 		if (document.createEvent) { // W3C
 	    	var ev = document.createEvent('Event');
@@ -95,6 +120,12 @@ html,body{height:100%;width:100%;font-family:'Roboto',sans-serif;-webkit-font-sm
 			element.fireEvent("onresize",event);
 		}
 		resetSize();
+
+		if (typeof ga === 'function') {
+			ga('create', 'UA-107134498-Y', 'auto');
+			ga('require', 'eventTracker');
+			ga('send', 'pageview');
+		};
 	}
 	var checkLoad = function() {
 		document.readyState !== "complete" ? setTimeout(checkLoad, 11) : init();   
@@ -103,6 +134,18 @@ html,body{height:100%;width:100%;font-family:'Roboto',sans-serif;-webkit-font-sm
 	checkLoad(); 
 	init();
 }(document, 'standard-footer'));
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107134498-3"></script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="vendor/autotrack/autotrack.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107134498-3');
 </script>
 </body>
 </html>

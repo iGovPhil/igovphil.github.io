@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta http-equiv="Cache-Control" content="private" />
+<meta http-equiv="Expires" content="86400000" />
+<meta http-equiv="Cache-Control" content="max-age=86400000" />
+<base target="_parent" />
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="bootstrap.min.css">
+<style type="text/css">
+body{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/**
+ * Standards stylesheets
+ * standard styling which is not subject for overriding
+ */
+/* line 7, ../sass/standards.scss */
+#standard-footer {
+  background-color: #003d6b;
+  color: #fff;
+  margin: 0;
+}
+/* line 13, ../sass/standards.scss */
+#standard-footer .standard-footer-row {
+  /*height: 260px;*/
+  padding: 28px 0;
+}
+/* line 16, ../sass/standards.scss */
+#standard-footer .standard-footer-row .standard-footer-cols {
+  border-right: 1px solid #002541;
+  height: 100%;
+  margin-top: 0;
+  padding: 0 40px 15px;
+}
+/* line 22, ../sass/standards.scss */
+#standard-footer .standard-footer-row .standard-footer-cols .row-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/* line 27, ../sass/standards.scss */
+#standard-footer .standard-footer-row .standard-footer-cols .republic {
+  font-family: Georgia, serif;
+  margin-bottom: 40px;
+}
+/* line 31, ../sass/standards.scss */
+#standard-footer .standard-footer-row .standard-footer-cols .republic .coa {
+  height: 48px;
+  width: 44px;
+}
+/* line 36, ../sass/standards.scss */
+#standard-footer .standard-footer-row .standard-footer-cols .republic #footer-republic-text {
+  font-size: 16px;
+  margin: 0;
+}
+/* line 41, ../sass/standards.scss */
+#standard-footer .standard-footer-row .standard-footer-cols .republic #footer-ngp-text {
+  font-size: 24px;
+  margin: 0;
+}
+/* line 48, ../sass/standards.scss */
+#standard-footer .standard-footer-row .standard-footer-cols .about p {
+  line-height: 26px;
+}
+/* line 52, ../sass/standards.scss */
+#standard-footer .standard-footer-row .standard-footer-cols .about .public-domain {
+  line-height: normal;
+  margin-bottom: 40px;
+}
+/* line 60, ../sass/standards.scss */
+#standard-footer .standard-footer-row .standard-footer-cols .footer-menu li a {
+  color: #cfcfcf;
+  line-height: 26px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+/* line 66, ../sass/standards.scss */
+#standard-footer .standard-footer-row .standard-footer-cols .footer-menu li a:hover, #standard-footer .standard-footer-row .standard-footer-cols .footer-menu li a:focus {
+  color: #eaeaea;
+}
+/* line 75, ../sass/standards.scss */
+#standard-footer .standard-footer-row .standard-footer-col-last {
+  border-right: 0;
+}
+
+/* line 81, ../sass/standards.scss */
+.ngp-contact-us {
+  background-color: #002541;
+  padding: 12px 0;
+}
+/* line 85, ../sass/standards.scss */
+.ngp-contact-us p {
+  color: #718ca1;
+  margin: 0;
+  padding: 0;
+}
+/* line 91, ../sass/standards.scss */
+.ngp-contact-us a {
+  color: #718ca1;
+  text-decoration: underline;
+}
+#standard-footer ul{
+  list-style: none;
+  padding-left: 0;
+}
+#standard-footer ul li{
+  list-style: none;
+}
+#standard-footer h4{
+  font-weight: normal;
+}
+
+/**
+ * font implementation
+ */
+html{
+  font-size: calc(14px + 1vw);
+}
+body{
+  font-size: 14px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.font-label{
+  color: #aaa;
+  font-size: 1em;
+}
+
+/** temporariy only **/
+h1, h2, h3, h4{
+  margin-bottom: 5px;
+}
+
+h1, h2, h3, h4{
+  /*font-weight: bold;*/
+}
+
+h1{
+  font-family: Georgia, serif;
+  font-size: 2.428em;
+}
+
+h1.logo{
+  font-size: 3.428em;
+  margin-bottom: 0;
+}
+
+
+h2{
+  font-size: 1.428em;
+}
+
+h3{
+  font-size: 1.285em;
+  font-weight: bold;
+}
+
+h3.title{
+  font-weight: normal;
+}
+
+h4{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+input,button{
+  font-size: 1.142em;
+  font-weight: bold;
+}
+
+label{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+a{
+  font-size: 1.166;
+}
+
+p{
+  font-size: 1em;
+}
+
+p.important{
+  font-size: 1.428em;
+}
+
+.standard-footer-cols .row-title{
+  padding-left: 0;
+}
+
+</style>
+</head>
+<body>
+<div id="standard-footer">
+  <div class="container">
+    <div class="row standard-footer-row">
+      <div class="col-md-5 standard-footer-cols">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 republic">
+            <div class="row">
+              <div class="col-lg-2 col-md-2 col-sm-1 col-xs-2">
+                <img class="coa" src="https://www.gov.ph/o/agency-theme/images/coa-footer.svg" style="max-height: 44px; max-width: 48px;">
+              </div>
+              <div class="col-lg-10 col-md-10 col-sm-11 col-xs-10">
+                <p id="footer-republic-text">
+                REPUBLIC OF THE PHILIPPINES</p>
+                <p id="footer-ngp-text">
+                National Government Portal</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-offset-2 col-md-10 col-sm-12 col-xs-12 col-md about">
+            <p class="public-domain">
+              All content is in the public domain<br>
+            unless otherwise stated.</p>
+            <ul class="footer-menu">
+              <li>
+                <a href="https://www.gov.ph/about-the-philippines" target="_blank">
+                About the Philippines</a>
+              </li>
+              <li>
+                <a href="https://www.gov.ph/about-the-government" target="_blank">
+                About the Government</a>
+              </li>
+              <li>
+                <a href="https://www.gov.ph/about-this-website" target="_blank">
+                About this Website</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 standard-footer-cols">
+        <div class="col-md-12 col-sm-12 row-title">
+          <h4>
+          SERVICES</h4>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <ul class="footer-menu">
+              <li>
+                <a href="https://www.gov.ph/business-and-trade" target="_blank">
+                Business and Trade</a>
+              </li>
+              <li>
+                <a href="https://www.gov.ph/certificates-and-ids" target="_blank">
+                Certificates and IDs</a>
+              </li>
+              <li>
+                <a href="https://www.gov.ph/contributions" target="_blank">
+                Contributions</a>
+              </li>
+              <li>
+                <a href="https://www.gov.ph/disaster-and-weather" target="_blank">
+                Disaster and Weather</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <ul class="footer-menu">
+              <li>
+                <a href="https://www.gov.ph/education" target="_blank">
+                Education</a>
+              </li>
+              <li>
+                <a href="https://www.gov.ph/employment" target="_blank">
+                Employment</a>
+              </li>
+              <li>
+                <a href="https://www.gov.ph/health" target="_blank">
+                Health</a>
+              </li>
+              <li>
+                <a href="https://www.gov.ph/housing" target="_blank">
+                Housing</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <ul class="footer-menu">
+              <li>
+                <a href="https://www.gov.ph/passport-and-travel" target="_blank">
+                Passport and Travel</a>
+              </li>
+              <li>
+                <a href="https://www.gov.ph/social-services" target="_blank">
+                Social Services Tax</a>
+              </li>
+              <li>
+                <a href="https://www.gov.ph/transport-and-driving" target="_blank">
+                Transport and Driving</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ngp-contact-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-right">
+          <p>
+          Email us at <a href="mailto:helpdesk@i.gov.ph" target="_top">
+          helpdesk@i.gov.ph</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/iframeResizer.contentWindow.min.js"></script>
+<script type="text/javascript">
+(function(d, f){
+  var fc;
+  fc = d.getElementById(f);
+  var resetSize = function(){
+    if ('parentIFrame' in window) window.parentIFrame.size(fc.clientHeight);
+  }
+  
+  // console.log(fc.clientHeight);
+  window.onresize = function(event) {
+      resetSize();
+  };
+
+  addEvent = function(element, evnt, funct){
+    if (element.attachEvent)
+      return element.attachEvent('on'+evnt, funct);
+    else
+      return element.addEventListener(evnt, funct, false);
+  }
+
+  // example
+  // addEvent(
+  //  document.getElementById('myElement'),
+  //  'click',
+  //  function () { alert('hi!'); }
+  // );
+  callBackTimeout = function(callback, opt_timeout) {
+    var called = false;
+    function fn() {
+      if (!called) {
+        called = true;
+        callback();
+      }
+    }
+    setTimeout(fn, opt_timeout || 1000);
+    return fn;
+  }
+
+  var init = function(){
+    if (document.createEvent) { // W3C
+        var ev = document.createEvent('Event');
+      ev.initEvent('resize', true, true);
+      window.dispatchEvent(ev);
+    }
+    else { // IE
+      element=document.documentElement;
+      var event=document.createEventObject();
+      element.fireEvent("onresize",event);
+    }
+    resetSize();
+
+    if (typeof ga === 'function') {
+      ga('create', 'UA-107134498-Y', 'auto');
+      ga('require', 'eventTracker');
+      ga('send', 'pageview');
+    };
+  }
+  var checkLoad = function() {
+    document.readyState !== "complete" ? setTimeout(checkLoad, 11) : init();   
+  };
+
+  checkLoad(); 
+  init();
+}(document, 'standard-footer'));
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107134498-3"></script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="vendor/autotrack/autotrack.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107134498-3');
+</script>
+</body>
+</html>

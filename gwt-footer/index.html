@@ -1,32 +1,43 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Standard Footer</title>
+  <style>
+  .container{
+    width: 1070px;
+    margin: 30px auto;
+  }
+  #standard-footer{
+    margin: 20px;
+  }
+  .markdown-body pre{
+    border: 1px solid #cdcdcd;
+  }
+  .markdown-body code{
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+  }
+  </style>
+  <link rel="stylesheet" href="vendor/github-markdown-css/github-markdown.css" />
 </head>
 <body>
-	<h1>Footer Generator</h1>
-<pre>
-&lt;div id="gwt-standard-footer"&gt;&lt;/div&gt;
-&lt;script type="text/javascript"&gt;
-(function(d, s, id) {
-  var js, gjs = d.getElementById('gwt-standard-footer');
+<div class="container">
+  <div id="gwt-standard-footer" style="margin: 20px;">
+    <iframe src="//gwhs.i.gov.ph/gwt-footer/footer-source.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0; min-height: 188px" ></iframe>
+  </div>
+  <div id="content" class="markdown-body">Loading...</div>
+  <script data-main="js/main" src="vendor/requirejs/require.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107134498-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  js = d.createElement(s); js.id = id;
-  js.src = "//gwhs.i.gov.ph/gwt-footer/footer.js";
-  gjs.parentNode.insertBefore(js, gjs);
-}(document, 'script', 'gwt-footer-jsdk'));
-&lt;/script&gt;
-</pre>
-<div id="gwt-standard-footer">
-</div>
-<script type="text/javascript">
-    (function(d, s, id) {
-      var js, gjs = d.getElementById('gwt-standard-footer');
-
-      js = d.createElement(s); js.id = id;
-      js.src = "//gwhs.i.gov.ph/gwt-footer/footer.js";
-      gjs.parentNode.insertBefore(js, gjs);
-
-    }(document, 'script', 'gwt-footer-jsdk'));
+  gtag('config', 'UA-107134498-3');
 </script>
+
+</div>
 </body>
 </html>

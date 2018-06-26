@@ -1,0 +1,25 @@
+{
+  "name": "gwt-footer",
+  "version": "1.0.0",
+  "description": "**Authored by: Voltz Jeturian voltz.jeturian@icto.dost.gov.ph**",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iGovPhil/gwt-footer.git"
+  },
+  "keywords": [
+    "gwt",
+    "footer",
+    "gwt-footer",
+    "government"
+  ],
+  "author": "voltz.jeturian@dict.gov.ph",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/iGovPhil/gwt-footer/issues"
+  },
+  "homepage": "https://github.com/iGovPhil/gwt-footer#readme"
+}

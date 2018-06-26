@@ -1,0 +1,15 @@
+{
+  "name": "autotrack",
+  "homepage": "https://github.com/googleanalytics/autotrack",
+  "version": "2.4.1",
+  "_release": "2.4.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.4.1",
+    "commit": "eda5cdcb340c508f48a323a22b1c971326afefa9"
+  },
+  "_source": "https://github.com/googleanalytics/autotrack.git",
+  "_target": "^2.4.1",
+  "_originalSource": "autotrack",
+  "_direct": true
+}

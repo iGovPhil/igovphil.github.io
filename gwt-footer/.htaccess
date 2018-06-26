@@ -1,2 +1,6 @@
-# set cache to 1 day
-Header set Cache-Control "max-age=86400, public, must-revalidate"
+<IfModule mod_headers.c>
+  Header set Connection keep-alive
+  # set cache to 1 day
+  Header set Cache-Control "max-age=86400, public, must-revalidate"
+</IfModule>
+

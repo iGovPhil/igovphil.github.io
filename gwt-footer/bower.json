@@ -1,0 +1,38 @@
+{
+  "name": "gwt-footer",
+  "description": "**Authored by: Voltz Jeturian voltz.jeturian@icto.dost.gov.ph**",
+  "main": "js/main.js",
+  "authors": [
+    "voltz.jeturian voltz.jeturian@dict.gov.ph"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "gwt",
+    "footer",
+    "gwt-footer",
+    "government"
+  ],
+  "homepage": "https://github.com/iGovPhil/gwt-footer",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "install": {
+    "path": {
+      "css": "css",
+      "js": "js"
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "requirejs": "^2.3.5",
+    "underscore": "^1.8.3",
+    "markdown": "^0.5.0",
+    "text": "requirejs-text#^2.0.15",
+    "requirejs-plugins": "^1.0.3",
+    "github-markdown-css": "^2.8.0"
+  }
+}
