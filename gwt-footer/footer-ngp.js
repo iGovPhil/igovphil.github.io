@@ -20,7 +20,7 @@ FooterIframeInit = function(){
    * @author DOST-ICTO gwtsupport@i.gov.ph
    */
     var f = d.getElementById(fid);
-    f.innerHTML = '<iframe src="//igovphil.github.io/gwt-footer/footer-source-ngp.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0; min-height: 371px" onload="iFrameResize(autoResize: true,enablePublicMethods: true, checkOrigin: false)" ></iframe>';
+    f.innerHTML = '<iframe src="//igovphil.github.io/gwt-footer/footer-source-ngp.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0; min-height: 371px" onload="iFrameResize({autoResize: true,enablePublicMethods: true, checkOrigin: false})" ></iframe>';
     var i = d.getElementById('footer-gwt-frame');
 
     i.style.marginBottom = '-3px';
