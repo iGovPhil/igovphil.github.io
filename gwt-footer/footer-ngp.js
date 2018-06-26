@@ -1,9 +1,3 @@
-// TODO: check if Liferay, AUI is defined
-
-// If liferay, AUI exists call ready function, else run as native
-
-var footerInit = function(){
-
 /** iFrame Resizer (iframeSizer.min.js ) - v2.5.2 - 2014-07-17
  *  Desc: Force cross domain iframes to size to content.
  *  Requires: iframeResizer.contentWindow.min.js to be loaded into the target frame.
@@ -19,7 +13,7 @@ var footerInit = function(){
  */
 (function(d, fid){
   var f = d.getElementById(fid);
-  f.innerHTML = '<iframe src="//gwhs.i.gov.ph/gwt-footer/footer-source-ngp.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0; min-height: 371px" ></iframe>';
+  f.innerHTML = '<iframe src="//igovphil.github.io/gwt-footer/footer-source-ngp.html" id="footer-gwt-frame" width="100%" scrolling="no" style="border: 0; min-height: 371px" ></iframe>';
   var i = d.getElementById('footer-gwt-frame');
 
   i.style.marginBottom = '-3px';
@@ -31,5 +25,3 @@ var footerInit = function(){
   }, '#footer-gwt-frame');
 
 }(document, 'gwt-standard-footer'));
-
-}
