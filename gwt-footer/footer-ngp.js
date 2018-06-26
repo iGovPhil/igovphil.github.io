@@ -10,7 +10,7 @@ FooterIframeInit = function(){
   var js, gjs = d.getElementById('gwt-standard-footer');
 
   js = d.createElement(s); js.id = id;
-  js.src = "//http://davidjbradshaw.com/iframe-resizer/js/iframeResizer.min.js";
+  js.src = "//davidjbradshaw.com/iframe-resizer/js/iframeResizer.min.js";
   gjs.parentNode.insertBefore(js, gjs);
 }(document, 'script', 'iframeResizer-container'));
 
