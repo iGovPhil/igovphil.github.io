@@ -5,6 +5,19 @@
     <title>Time PST</title>
     <style>
     <!--
+    body{
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    .container{
+      width: 1070px;
+      margin: 30px auto;
+    }
+    .pst-example{
+      text-align: center;
+      margin: 20px;
+      font-size: 50px;
+    }
     #pst-container{
       font-size: 15px;
       line-height: 1em;
@@ -23,58 +36,39 @@
       color: #909090;
       text-decoration: none;
     }
+    .markdown-body code{
+      font-family: monospace;
+      white-space: pre;
+      margin: 1em 0px;
+      border: 1px solid #cdcdcd;
+    }
     -->
     </style>
+    <link rel="stylesheet" href="node_modules/github-markdown-css/github-markdown.css" />
 </head>
 <body>
-
-<h3>Embedding PST Timer</h3>
-<pre>
-&lt;div id=&quot;pst-container&quot;&gt;
-  &lt;div&gt;Philippine Standard Time:&lt;/div&gt;
-  &lt;div id=&quot;pst-time&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script type=&quot;text/javascript&quot; id=&quot;gwt-pst&quot;&gt;
+<div class="container">
+  <div class="pst-example">
+  </div>
+  <script type="text/javascript" id="gwt-pst">
 (function(d, eId) {
   var js, gjs = d.getElementById(eId);
   js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
-  js.src = &quot;//gwhs.i.gov.ph/pst/gwtpst.js?&quot;+new Date().getTime();
+  js.src = "//pst.web.local/gwtpst.js?"+new Date().getTime();
   gjs.parentNode.insertBefore(js, gjs);
 }(document, 'gwt-pst'));
 
 var gwtpstReady = function(){
-  new gwtpstTime('pst-time');
-}
-&lt;/script&gt;
-</pre>
-
-<h1>Sample Output</h1>
-<div id="pst-container">
-<div>Philippine Standard Time:</div>
-<div id="pst-time"></div>
-</div>
-<script type="text/javascript" id="gwt-pst">
-(function(d, eId) {
-  var js, gjs = d.getElementById(eId);
-  js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
-  js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
-  gjs.parentNode.insertBefore(js, gjs);
-}(document, 'gwt-pst'));
-
-var gwtpstReady = function(){
-  new gwtpstTime('pst-time');
+  var otherFormat = 'h:MM:ss TT';
+  var firstPst = new gwtpstTime({
+    timerClass: 'pst-example',
+    format: otherFormat
+  });
 }
 </script>
-
-<h1>See other examples:</h1>
-<ul>
-  <li><a href="index.html">Basic</a></li>
-  <li><a href="other_date.html">Other Date Formats</a></li>
-  <li><a href="multiple.html">Multiple Timers</a></li>
-  <li><a href="keyboard_trap.html">keyboard trap test - single</a></li>
-  <li><a href="keyboard_trap_multiple.html">keyboard trap test - multiple</a></li>
-</ul>
-
+  <div id="content" class="markdown-body">Loading...</div>
+  <!-- <div id="menu"></div> -->
+</div>
+<script data-main="js/main" src="node_modules/requirejs/require.js"></script>
 </body>
 </html>

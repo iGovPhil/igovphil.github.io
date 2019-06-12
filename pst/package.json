@@ -1,0 +1,24 @@
+{
+  "name": "pst",
+  "version": "1.0.0",
+  "description": "Philippine Standard Time - PST",
+  "main": "js/main.js",
+  "dependencies": {
+    "requirejs": "^2.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.i.gov.ph/voltz.jeturian/pst.git"
+  },
+  "keywords": [
+    "PST",
+    "philippine",
+    "time"
+  ],
+  "author": "Voltz Jeturian - voltz.jeturian@dict.gov.ph",
+  "license": "GPL-3.0"
+}

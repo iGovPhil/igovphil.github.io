@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>PST Timer by Class selection</title>
+    <style>
+    <!--
+    #pst-container{
+      font-size: 15px;
+      line-height: 1em;
+    }
+    #pst-container div{
+      margin-bottom: 10px;
+    }
+    #pst-time{
+      font-size: 18px;
+    }
+    #pst-date{
+      font-size: 26px;
+    }
+    #pst-source{
+      font-size: 13px;
+      color: #909090;
+      text-decoration: none;
+    }
+    -->
+    </style>
+</head>
+<body>
+
+<h3>Embedding Multiple PST Timer</h3>
+<pre>
+&lt;div id=&quot;pst-container&quot;&gt;
+  &lt;div&gt;Philippine Standard Time:&lt;/div&gt;
+  <strong>&lt;div class=&quot;pst-timer&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;pst-timer&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;pst-timer&quot;&gt;&lt;/div&gt;</strong>
+&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot; id=&quot;gwt-pst&quot;&gt;
+(function(d, eId) {
+  var js, gjs = d.getElementById(eId);
+  js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
+  js.src = &quot;//gwhs.i.gov.ph/pst/gwtpst.js?&quot;+new Date().getTime();
+  gjs.parentNode.insertBefore(js, gjs);
+}(document, 'gwt-pst'));
+
+var gwtpstReady = function(){
+  new gwtpstTime({
+    <strong>timerClass: 'pst-timer'</strong>// Note: use timerClass option to select which class elements to select
+  });
+}
+&lt;/script&gt;
+</pre>
+
+<h1>Sample Output</h1>
+<div id="pst-container">
+<div>Philippine Standard Time:</div>
+<div class="pst-timer"></div>
+<div class="pst-timer"></div>
+<div class="pst-timer"></div>
+</div>
+<script type="text/javascript" id="gwt-pst">
+(function(d, eId) {
+  var js, gjs = d.getElementById(eId);
+  js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
+  js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
+  gjs.parentNode.insertBefore(js, gjs);
+}(document, 'gwt-pst'));
+
+var gwtpstReady = function(){
+  new gwtpstTime({
+    timerClass: 'pst-timer'
+  });
+}
+</script>
+
+<h1>See other examples:</h1>
+<ul>
+  <li><a href="index.html">Basic</a></li>
+  <li><a href="other_date.html">Other Date Formats</a></li>
+  <li><a href="multiple.html">Multiple Timers</a></li>
+  <li><a href="keyboard_trap.html">keyboard trap test - single</a></li>
+  <li><a href="keyboard_trap_multiple.html">keyboard trap test - multiple</a></li>
+</ul>
+
+</body>
+</html>

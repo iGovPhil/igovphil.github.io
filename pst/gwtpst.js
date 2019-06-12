@@ -26,8 +26,8 @@ var gwtpst = gwtpst || function(){
   // initialize time difference
   this.time();
   defaultOptions = {
-    url : '//gwhs.i.gov.ph/pst/jsonp_unix.php', // URL of the PST unix timestamp server
-    refreshRate : 200, // refresh rate of pst timer
+    url : '//pst.web.local/jsonp_unix.php', // URL of the PST unix timestamp server
+    refreshRate : 200 // refresh rate of pst timer
   };
 
   this.extend(defaultOptions, options);
@@ -53,26 +53,29 @@ gwtpst.prototype = {
   url : '',
   _started: false,
   _serverTime: 0,
+  _serverTimezone: 0,
+  _delay: 0,
   timers: new Array(),
   time : function(){
     return this._now = new Date().getTime();
   },
-  // _now : this.time(),
   refreshRate : 200,
+  // get the time difference of the time of request to current time
   getDiff : function(){
-    if(typeof this._now === "undefined" ){
-      this.time();
-    }
-    this._delay = (new Date().getTime() - this._now);
-    this.time(); // call time again
-
-    // console.log(this._delay);
+    var localTimeZone = new Date().getTimezoneOffset();
+    localTimeZone = ((localTimeZone * 60) * 1000);
+    var serverTimezone = ((this._serverTimezone * 60) * 1000);
+    this._serverRequestDelay = (new Date().getTime() - this._now);
+    this._delay = (new Date().getTime() - (this._serverTime + this._serverRequestDelay)) - (localTimeZone - serverTimezone);
     return this._delay;
   },
   // initialize and retrieve from the pst unix timestamp server
   jsonpRequest: function(){
     var js = document.createElement('script'); js.id = 'gwt-pst-jsonp-time';
-    js.src = this.url+'?'+this.time(); // must be no cache
+    if(typeof this._now === "undefined" ){
+      this.time();
+    }
+    js.src = this.url+'?'+new Date().getTime(); // must be no cache
 
     this.element.parentNode.insertBefore(js, this.element.nextSibling);
   },
@@ -83,9 +86,8 @@ gwtpst.prototype = {
   },
   jsonpResponse: function(response){
     var scope = this;
-    // console.log(response);
-    // return true;
     scope._serverTime = parseInt(response.time)*1000;
+    scope._serverTimezone = response.timezone;
     scope.getDiff();
 
     // run the timer
@@ -102,18 +104,14 @@ gwtpst.prototype = {
   },
   timer : function(gwtpst){
     var scope = gwtpst;
-    scope._serverTime = scope._serverTime + scope.getDiff();
-    // console.log('now time difference: ' + (Date.now() - now));
-    scope.getDiff();
-    var serverTime = new Date(scope._serverTime).format();
+    var time = new Date().getTime() - scope._delay;
+    var serverTime = new Date(time).format();
 
     // update each timer
     for (var i = 0; i < scope.timers.length; i++) {
       timer = scope.timers[i];
       timer.refresh(serverTime);
     }
-    // scope.element.innerHTML = scope.timeFormat(scope._serverTime);
-    // $('#timer').html(formattedTime);
     setTimeout(function(){
       scope.timer(scope)
     }, scope.refreshRate);
@@ -173,7 +171,7 @@ var gwtpstTime = gwtpstTime || function(){
     prefix: '', // prefix text before time display
     suffix: '', // suffix text after time displa
     displaySource: true, // set to true to display the source is from official PST link
-    keyboardTrap: false, // set to true to display time enclosed in anchor tag to avoid keyboard trap issue!
+    keyboardTrap: true, // set to true to display time enclosed in anchor tag to avoid keyboard trap issue!
   };
   this.extend(defaultOptions, options);
 
@@ -255,7 +253,7 @@ gwtpstTime.prototype = {
         return false;
       }, false);
       a.style.textDecoration = "none";
-      a.style.color = "inherit";
+      a.style.setProperty("color", "inherit", "important");
       this._element.appendChild(a);
       this._element = a;
     }
@@ -394,7 +392,7 @@ var gwtPstWidget;
 var gwtpstInit = function(){
   gwtPstWidget = new gwtpst({
     element: document.getElementById('gwt-pst'),
-    url: '//gwhs.i.gov.ph/pst/jsonp_unix.php',
+    url: '//pst.web.local/jsonp_unix.php'
   });
 };
 gwtpstInit();
